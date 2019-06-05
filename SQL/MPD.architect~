@@ -4,7 +4,7 @@
  <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
  <project-data-sources>
   <data-source id="DS0">
-   <property key="Logical" value="(Target Database)" />
+   <property key="Logical" value="PlayPen Database" />
   </data-source>
  </project-data-sources>
  <source-databases>
@@ -147,7 +147,7 @@
     <column id="COL39" populated="true" UUID="da8a7f8e-005f-4d77-a294-7d5ffe846af0" autoIncrement="false" autoIncrementSequenceName="Utilisateur_pseudo_seq" defaultValue="" name="pseudo" nullable="0" physicalName="pseudo" precision="255" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL40" populated="true" UUID="ec4091c7-839c-4979-af1b-58937791ee0a" autoIncrement="false" autoIncrementSequenceName="Commentaire_description_seq" defaultValue="" name="description" nullable="0" physicalName="description" precision="500" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="-1" userDefinedTypeUUID="9a814859-ab26-4acd-9415-ea82291bcac1" >
+    <column id="COL40" populated="true" UUID="ec4091c7-839c-4979-af1b-58937791ee0a" autoIncrement="false" autoIncrementSequenceName="Commentaire_description_seq" defaultValue="" name="description" nullable="0" physicalName="description" precision="255" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     </folder>
@@ -156,7 +156,7 @@
     <folder id="FOLTAB362" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB364" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX41" populated="true" UUID="720cc4b7-87f1-4c9c-9867-35d8454d87e4" clustered="false" name="Commentaire_pk" physicalName="Commentaire_pk" primaryKeyIndex="true" unique="false" >
+    <index id="IDX41" populated="true" UUID="720cc4b7-87f1-4c9c-9867-35d8454d87e4" clustered="false" name="Commentaire_pk" physicalName="commentaire_pk" primaryKeyIndex="true" unique="false" >
      <index-column id="IDC42" populated="true" UUID="52fa6f83-1218-4eab-acb1-50221276133b" ascendingOrDescending="UNSPECIFIED" column-ref="COL37" name="idCom" physicalName="idCom" />
     </index>
    </folder>
@@ -165,7 +165,7 @@
    <relationship id="REL43" populated="true" UUID="e342e74a-d768-4268-a2bb-eb269e77e3f7" deferrability="7" deleteRule="3" fk-table-ref="TAB36" fkCardinality="7" identifying="false" name="Utilisateur_Commentaire_fk" physicalName="Utilisateur_Commentaire_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP44" populated="true" UUID="c4419b61-6bea-4aa2-b3d0-f3c3a6b4a1bf" fk-column-ref="COL39" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
    </relationship>
-   <relationship id="REL45" populated="true" UUID="dba27443-96a4-4296-8386-f36fb5a9c51b" deferrability="7" deleteRule="3" fk-table-ref="TAB9" fkCardinality="7" identifying="false" name="Biere_Bar_fk" physicalName="biere_bar_fk" pk-table-ref="TAB20" pkCardinality="2" updateRule="3" >
+   <relationship id="REL45" populated="true" UUID="dba27443-96a4-4296-8386-f36fb5a9c51b" deferrability="7" deleteRule="3" fk-table-ref="TAB9" fkCardinality="7" identifying="false" name="Biere_Bar_fk" physicalName="Biere_Bar_fk" pk-table-ref="TAB20" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP46" populated="true" UUID="4ee34127-a0e9-41c4-a1b4-034c0d563b5a" fk-column-ref="COL11" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL21" />
    </relationship>
   </relationships>

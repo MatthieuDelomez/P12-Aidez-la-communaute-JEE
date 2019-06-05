@@ -4,7 +4,7 @@
  <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
  <project-data-sources>
   <data-source id="DS0">
-   <property key="Logical" value="(Target Database)" />
+   <property key="Logical" value="PlayPen Database" />
   </data-source>
  </project-data-sources>
  <source-databases>
@@ -147,7 +147,7 @@
     <column id="COL39" populated="true" UUID="da8a7f8e-005f-4d77-a294-7d5ffe846af0" autoIncrement="false" autoIncrementSequenceName="Utilisateur_pseudo_seq" defaultValue="" name="pseudo" nullable="0" physicalName="pseudo" precision="255" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL40" populated="true" UUID="ec4091c7-839c-4979-af1b-58937791ee0a" autoIncrement="false" autoIncrementSequenceName="Commentaire_description_seq" defaultValue="" name="description" nullable="0" physicalName="description" precision="500" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="-1" userDefinedTypeUUID="9a814859-ab26-4acd-9415-ea82291bcac1" >
+    <column id="COL40" populated="true" UUID="ec4091c7-839c-4979-af1b-58937791ee0a" autoIncrement="false" autoIncrementSequenceName="Commentaire_description_seq" defaultValue="" name="description" nullable="0" physicalName="description" precision="255" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     </folder>

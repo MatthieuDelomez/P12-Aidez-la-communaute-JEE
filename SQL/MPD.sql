@@ -56,7 +56,7 @@ CREATE TABLE public.Commentaire (
                 idCom INTEGER NOT NULL DEFAULT nextval('public.commentaire_idcom_seq'),
                 titre VARCHAR(50) NOT NULL,
                 pseudo VARCHAR(255) NOT NULL,
-                description TEXT NOT NULL,
+                description VARCHAR(255) NOT NULL,
                 CONSTRAINT commentaire_pk PRIMARY KEY (idCom)
 );
 
