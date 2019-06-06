@@ -12,7 +12,7 @@ public class PagesController {
     @GetMapping("/")
     public String home() {
         
-        return "home";
+        return "index";
         
     }
     
