@@ -1,4 +1,14 @@
 
+CREATE TABLE public.PatronBar (
+                pseudo VARCHAR(255) NOT NULL,
+                nom VARCHAR(255) NOT NULL,
+                prenom VARCHAR(255) NOT NULL,
+                motPasse VARCHAR(255) NOT NULL,
+                adresseMail VARCHAR(255) NOT NULL,
+                CONSTRAINT patronbar_pk PRIMARY KEY (pseudo)
+);
+
+
 CREATE TABLE public.Administrateur (
                 pseudo VARCHAR(255) NOT NULL,
                 nom VARCHAR(255) NOT NULL,
@@ -27,6 +37,7 @@ CREATE SEQUENCE public.bar_idbar_seq;
 
 CREATE TABLE public.Bar (
                 idBar INTEGER NOT NULL DEFAULT nextval('public.bar_idbar_seq'),
+                pseudoPatron VARCHAR(255) NOT NULL,
                 idBiere INTEGER NOT NULL,
                 nom VARCHAR(255) NOT NULL,
                 adresse VARCHAR(255) NOT NULL,
@@ -62,6 +73,13 @@ CREATE TABLE public.Commentaire (
 
 
 ALTER SEQUENCE public.commentaire_idcom_seq OWNED BY public.Commentaire.idCom;
+
+ALTER TABLE public.Bar ADD CONSTRAINT patronbar_bar_fk
+FOREIGN KEY (pseudoPatron)
+REFERENCES public.PatronBar (pseudo)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE;
 
 ALTER TABLE public.Bar ADD CONSTRAINT biere_bar_fk
 FOREIGN KEY (idBiere)

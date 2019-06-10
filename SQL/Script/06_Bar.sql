@@ -1,5 +1,6 @@
 ﻿INSERT INTO public.bar(
 idBiere,
+pseudoPatron,
 nom,
 adresse,
 codePostal,
@@ -10,6 +11,7 @@ note
 
 VALUES(
 1,
+'Patron01',
 'La fée des Trolls',
 '12 rue Solférino',
 '59000',
