@@ -2,7 +2,7 @@
 package com.app.binouz.model;
 
 
-public class BeanBar {
+public class Bar {
     
     /*
     Création des variables qui vont definir le Bar

@@ -2,7 +2,7 @@
 package com.app.binouz.model;
 
 
-public class BeanBiere {
+public class Biere {
     
     /*
     Création des variables qui regroupe la biere
@@ -12,6 +12,19 @@ public class BeanBiere {
     private String variete;
     private String region;
     private float degres;
+
+    /*
+    Constructeur
+    */
+    public Biere(int idBiere, String nom, String variete, String region, float degres) {
+        this.idBiere = idBiere;
+        this.nom = nom;
+        this.variete = variete;
+        this.region = region;
+        this.degres = degres;
+    }
+    
+    
     
     
     /*
@@ -56,6 +69,13 @@ public class BeanBiere {
     public void setDegres(float degres) {
         this.degres = degres;
     }
+
+    @Override
+    public String toString() {
+        return "Biere{" + "idBiere=" + idBiere + ", nom=" + nom + ", variete=" + variete + ", region=" + region + ", degres=" + degres + '}';
+    }
+    
+    
     
     
 }

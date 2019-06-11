@@ -2,7 +2,7 @@
 package com.app.binouz.model;
 
 
-public class BeanCommentaire {
+public class Commentaire {
     
     /*
     Création des variable qui vot definir les commentaires

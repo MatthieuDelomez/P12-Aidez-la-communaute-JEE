@@ -8,7 +8,7 @@
 	<version>0.0.1-SNAPSHOT</version>
                       <packaging>jar</packaging>
         
-                      <name>binouz</name>
+                      <name>Biere Lab</name>
         
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -18,35 +18,42 @@
 	</parent>
 	
 	
-	<description>Recherchez votre binou'z préférée</description>
+	<description>Recherchez votre biere préférée</description>
 
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
+        
+        
 
 	<dependencies>
             
-            
-            <!-- https://mvnrepository.com/artifact/org.webjars/jquery -->
-<dependency>
-   <groupId>org.webjars</groupId>
-   <artifactId>jquery</artifactId>
-   <version>3.4.1</version>
-</dependency>
+                                            <!-- https://mvnrepository.com/artifact/org.webjars/jquery -->
+                                            <dependency>
+                                                                  <groupId>org.webjars</groupId>
+                                                                  <artifactId>jquery</artifactId>
+                                                                  <version>3.4.1</version>
+                                            </dependency>
  
-<!-- https://mvnrepository.com/artifact/org.webjars/popper.js -->
-<dependency>
-   <groupId>org.webjars</groupId>
-   <artifactId>popper.js</artifactId>
-   <version>1.15.0</version>
-</dependency>
+                                            <!-- https://mvnrepository.com/artifact/org.webjars/popper.js -->
+                                            <dependency>
+                                                                  <groupId>org.webjars</groupId>
+                                                                  <artifactId>popper.js</artifactId>
+                                                                  <version>1.15.0</version>
+                                            </dependency>
  
-<!-- https://mvnrepository.com/artifact/org.webjars/bootstrap -->
-<dependency>
-   <groupId>org.webjars</groupId>
-   <artifactId>bootstrap</artifactId>
-   <version>4.3.1</version>
-</dependency>
+                                            <!-- https://mvnrepository.com/artifact/org.webjars/bootstrap -->
+                                            <dependency>
+                                                                  <groupId>org.webjars</groupId>
+                                                                  <artifactId>bootstrap</artifactId>
+                                                                  <version>4.3.1</version>
+                                            </dependency>
+                                            
+                                            <!-- Dependance PostgreSql -->
+                                            <dependency>
+		                      <groupId>org.postgresql</groupId>
+		                      <artifactId>postgresql</artifactId>
+	                      </dependency>
             
             
 		<dependency>
@@ -69,7 +76,19 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+                
+                                            <!-- Ajout de la dependance qui va gérer notre connexion avec notre base de données -->
+                                            <dependency>
+                                                                  <groupId>org.springframework.boot</groupId>
+                                                                  <artifactId>spring-boot-starter-data-jpa</artifactId>
+                                            </dependency>
+                
 	</dependencies>
+        
+        
+        
+        
+        
 
 	<build>
 		<plugins>

@@ -2,11 +2,10 @@
 package com.app.binouz.model;
 
 
-
-public class BeanUtilisateur {
+public class PatronBar {
     
     /*
-    Création des variables qui vont definir notre utilisateur
+    Variables qui vont definir notre Patron
     */
     private String pseudo;
     private String nom;
@@ -16,8 +15,9 @@ public class BeanUtilisateur {
     
     
     /*
-    Invocation des Getters & Setters
+    Getters & Setter
     */
+
     public String getPseudo() {
         return pseudo;
     }
@@ -57,7 +57,6 @@ public class BeanUtilisateur {
     public void setAdresseMail(String adresseMail) {
         this.adresseMail = adresseMail;
     }
-    
     
     
 }
