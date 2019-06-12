@@ -1,13 +1,25 @@
 
 package com.app.binouz.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+
+@Table(name="Biere")
+@Entity
 public class Biere {
     
     /*
     Création des variables qui regroupe la biere
     */
-    private int idBiere;
+    @Id
+    @GeneratedValue
+    @Column(unique = true)
+    private int idbiere;
+    
     private String nom;
     private String variete;
     private String region;
@@ -16,26 +28,31 @@ public class Biere {
     /*
     Constructeur
     */
-    public Biere(int idBiere, String nom, String variete, String region, float degres) {
-        this.idBiere = idBiere;
+    public Biere(int idbiere, String nom, String variete, String region, float degres) {
+        this.idbiere = idbiere;
         this.nom = nom;
         this.variete = variete;
         this.region = region;
         this.degres = degres;
     }
     
+    /*
+    Constructeur par default pour JSon
+    */
+    public Biere() {
+    }
     
-    
+
     
     /*
     Invocation des Getters & Setters
     */
     public int getIdBiere() {
-        return idBiere;
+        return idbiere;
     }
 
-    public void setIdBiere(int idBiere) {
-        this.idBiere = idBiere;
+    public void setIdBiere(int idbiere) {
+        this.idbiere = idbiere;
     }
 
     public String getNom() {
@@ -72,7 +89,7 @@ public class Biere {
 
     @Override
     public String toString() {
-        return "Biere{" + "idBiere=" + idBiere + ", nom=" + nom + ", variete=" + variete + ", region=" + region + ", degres=" + degres + '}';
+        return "Biere{" + "idbiere=" + idbiere + ", nom=" + nom + ", variete=" + variete + ", region=" + region + ", degres=" + degres + '}';
     }
     
     
