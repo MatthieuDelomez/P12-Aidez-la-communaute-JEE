@@ -1,0 +1,10 @@
+﻿INSERT INTO 
+app_role (
+ROLE_ID, 
+ROLE_NAME
+)
+
+VALUES (
+2, 
+'ROLE_USER'
+);

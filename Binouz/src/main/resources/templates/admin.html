@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+    <head>
+        <title>Admin Stuff</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    
+    
+    
+    <body>
+        
+        
+<div class="container">
+
+    <div class="starter-template">
+        <h1>Admin page (Spring Security protected)</h1>
+
+        <h1 th:inline="text">Bienvenue dans l'Elite ! [[${#httpServletRequest.remoteUser}]]!</h1>
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Sign Out"/>
+        </form>
+
+    </div>
+
+</div>    
+    
+    
+    </body>
+    
+    
+    
+    
+</html>

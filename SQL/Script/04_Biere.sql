@@ -8,6 +8,6 @@ degres
 VALUES(
 'Duvel',
 'Blonde',
-'Belgique',
+'Flandre',
 '8.5'
 );

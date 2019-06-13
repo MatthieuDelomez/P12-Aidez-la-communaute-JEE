@@ -8,8 +8,8 @@ public class Commentaire {
     Création des variable qui vot definir les commentaires
     */
     private int idCom;
+    private Long userId;
     private String titre;
-    private String pseudo;
     private String description;
 
     /*
@@ -23,20 +23,20 @@ public class Commentaire {
         this.idCom = idCom;
     }
 
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
+
     public String getTitre() {
         return titre;
     }
 
     public void setTitre(String titre) {
         this.titre = titre;
-    }
-
-    public String getPseudo() {
-        return pseudo;
-    }
-
-    public void setPseudo(String pseudo) {
-        this.pseudo = pseudo;
     }
 
     public String getDescription() {
@@ -47,7 +47,7 @@ public class Commentaire {
         this.description = description;
     }
     
-    
+  
     
     
 }

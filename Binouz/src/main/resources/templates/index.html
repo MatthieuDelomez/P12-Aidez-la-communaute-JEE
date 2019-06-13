@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 
 <head>
 
@@ -11,7 +12,7 @@
     <meta name="author" content="colorlib.com">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
 
-  <title>Binou'z Lab !</title>
+  <title>Bière Lab !</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -49,19 +50,26 @@
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#recherche">Recherche</a>
       </li>
-     
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#services">Services</a>
       </li>
+      <br>
+      <br>
+      
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" th:href="@{/login}">Login</a>
+      </li>
+
+      
     </ul>
   </nav>
 
   <!-- Header -->
   <header class="masthead d-flex">
     <div class="container text-center my-auto">
-      <h1 class="mb-1">Welcome to Binou'z Lab</h1>
+      <h1 class="mb-1">Welcome to Bière Lab</h1>
       <h3 class="mb-5">
-        <em>Cherchez votre Binou'z préférée !</em>
+        <em>Cherchez votre Bière préférée !</em>
       </h3>
       <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
     </div>

@@ -1,0 +1,15 @@
+﻿INSERT INTO
+App_User(
+USER_ID, 
+USER_NAME,
+ADRESSE_MAIL, 
+ENCRYTED_PASSWORD, 
+ENABLED)
+
+VALUES (
+2,
+'user01',
+'UserSpringSecure@gmail.com',
+'$2a$10$PrI5Gk9L.tSZiW9FXhTS8O8Mz9E97k2FZbFvGFFaSsiTUIl.TCrFu',
+ 1);
+ 
