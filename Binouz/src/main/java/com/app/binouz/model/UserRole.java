@@ -1,11 +1,12 @@
 
 package com.app.binouz.model;
 
-
+import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
+import static javax.persistence.GenerationType.IDENTITY;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -15,51 +16,52 @@ import javax.persistence.UniqueConstraint;
 
 
 @Entity
-@Table(name = "User_Role", //
-        uniqueConstraints = { //
-                @UniqueConstraint(name = "USER_ROLE_UK", columnNames = { "User_Id", "Role_Id" }) })
-public class UserRole {
+@Table(name = "user_roles")
+public class UserRole implements Serializable{
     
-    
-    @Id
-    @GeneratedValue
-    @Column(name = "Id", nullable = false)
-    private Long id;
- 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "User_Id", nullable = false)
-    private AppUser appUser;
- 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "Role_Id", nullable = false)
-    private AppRole appRole;
-    
-    
-    /*
-    Invocation des Getters & Setters
-    */
-    public Long getId() {
-        return id;
+                     @Id
+                     @GeneratedValue
+                      @Column(name = "userroleid", nullable = false)
+                      private Long userRoleId;
+                      @Column(name = "role", length =45 , nullable = false)
+                      private String role;
+                       @Column(name = "username", length = 36, nullable = false)
+	private AppUser username;
+        
+        
+                      public UserRole() {
+	}
+
+	public UserRole(AppUser username, String role) {
+		this.username = username;
+		this.role = role;
+	}
+
+    public Long getUserRoleId() {
+        return userRoleId;
     }
- 
-    public void setId(Long id) {
-        this.id = id;
+
+    public void setUserRoleId(Long userRoleId) {
+        this.userRoleId = userRoleId;
     }
- 
-    public AppUser getAppUser() {
-        return appUser;
+
+    public String getRole() {
+        return role;
     }
- 
-    public void setAppUser(AppUser appUser) {
-        this.appUser = appUser;
+
+    public void setRole(String role) {
+        this.role = role;
     }
- 
-    public AppRole getAppRole() {
-        return appRole;
+
+    public AppUser getUsername() {
+        return username;
     }
- 
-    public void setAppRole(AppRole appRole) {
-        this.appRole = appRole;
+
+    public void setUsername(AppUser username) {
+        this.username = username;
     }
-    
+        
+        
 }
+   
+ 
