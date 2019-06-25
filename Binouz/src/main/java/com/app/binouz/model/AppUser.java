@@ -40,14 +40,17 @@ public class AppUser implements Serializable{
    @Column(name = "prenom", length = 30, nullable = false)
     private String prenom;
    
-   @Column(name = "enabled", length = 30, nullable = false)
+   @Column(name = "enabled", length = 30, nullable = true)
    private boolean enabled;
+   
+
    
    
    
    
 
     public AppUser() {
+        super();
     }
 
     public AppUser(String username, String adresseMail, String password, String nom, String prenom, boolean enabled) {
@@ -60,15 +63,7 @@ public class AppUser implements Serializable{
     }
     
     
-         public AppUser(String username, String password, 
-		boolean enabled, Set<UserRole> userRole) {
-		this.username = username;
-		this.password = password;
-		this.enabled = enabled;
-	}
-         
-         
-         
+  
          
 
     public String getUsername() {
@@ -118,6 +113,9 @@ public class AppUser implements Serializable{
     public void setEnabled(boolean enabled) {
         this.enabled = enabled;
     }
+
+
+    
 
 
          

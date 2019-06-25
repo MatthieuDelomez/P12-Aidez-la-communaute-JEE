@@ -57,8 +57,12 @@
       <br>
       
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" th:href="@{/login}">Login</a>
+        <form th:action="@{/logout}" method="post">
+              <input type="submit" value="Sign Out"/>
+        </form>
       </li>
+      
+
 
       
     </ul>

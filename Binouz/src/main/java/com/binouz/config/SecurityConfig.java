@@ -19,7 +19,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Configuration
 @EnableWebSecurity
-//@EnableGlobalMethodSecurity(securedEnabled = true)
+@EnableGlobalMethodSecurity(securedEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     
     
@@ -91,13 +91,25 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             */
             
             http.authorizeRequests()
+                    .antMatchers("/addUser").permitAll();
+            
+            
+            http.authorizeRequests()
                     .anyRequest()
                     .authenticated()
                     
                     .and()
                     .formLogin()
                     .loginPage("/login")
-                    .permitAll();
+
+                    .permitAll()
+                    
+                    .defaultSuccessUrl("/index")
+                    .failureUrl("/403");
+            
+            
+             
+
 
             
             /*
