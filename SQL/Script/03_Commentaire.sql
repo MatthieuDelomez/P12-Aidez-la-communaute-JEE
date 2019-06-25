@@ -1,11 +1,11 @@
 ﻿INSERT INTO public.commentaire(
-USER_ID,
+username,
 titre,
 description
 )
 
 VALUES(
-2,
+'user01',
 'TestCom01',
 'Un petit coucou, pour tester le com sur un Bar'
 );

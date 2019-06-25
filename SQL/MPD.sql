@@ -1,43 +1,32 @@
 
-CREATE TABLE public.PERSISTENT_LOGIN (
-                series VARCHAR(64) NOT NULL,
-                username VARCHAR(64) NOT NULL,
-                token VARCHAR(64) NOT NULL,
-                last_used TIMESTAMP NOT NULL,
-                CONSTRAINT persistent_login_pk PRIMARY KEY (series)
+CREATE TABLE public.App_User (
+                username VARCHAR(36) NOT NULL,
+                adresse_mail VARCHAR(120) NOT NULL,
+                password VARCHAR(128) NOT NULL,
+                nom VARCHAR(30) NOT NULL,
+                prenom VARCHAR(30) NOT NULL,
+                enabled BOOLEAN NOT NULL,
+                CONSTRAINT app_user_pk PRIMARY KEY (username)
 );
 
 
-CREATE TABLE public.APP_ROLE (
-                ROLE_ID BIGINT NOT NULL,
-                ROLE_NAME VARCHAR(30) NOT NULL,
-                CONSTRAINT app_role_pk PRIMARY KEY (ROLE_ID)
+CREATE SEQUENCE public.user_roles_id_seq;
+
+CREATE TABLE public.user_roles (
+                userRoleId BIGINT NOT NULL DEFAULT nextval('public.user_roles_id_seq'),
+                role VARCHAR(45) NOT NULL,
+                username VARCHAR(36) NOT NULL,
+                CONSTRAINT user_roles_pk PRIMARY KEY (userRoleId)
 );
 
 
-CREATE TABLE public.APP_USER (
-                USER_ID BIGINT NOT NULL,
-                USER_NAME VARCHAR(36) NOT NULL,
-                ADRESSE_MAIL VARCHAR(120) NOT NULL,
-                ENCRYTED_PASSWORD VARCHAR(128) NOT NULL,
-                ENABLED INTEGER NOT NULL,
-                CONSTRAINT app_user_pk PRIMARY KEY (USER_ID)
-);
-
-
-CREATE TABLE public.USER_ROLE (
-                ID BIGINT NOT NULL,
-                USER_ID BIGINT NOT NULL,
-                ROLE_ID BIGINT NOT NULL,
-                CONSTRAINT user_role_pk PRIMARY KEY (ID)
-);
-
+ALTER SEQUENCE public.user_roles_id_seq OWNED BY public.user_roles.userRoleId;
 
 CREATE SEQUENCE public.commentaire_idcom_seq;
 
 CREATE TABLE public.Commentaire (
                 idCom INTEGER NOT NULL DEFAULT nextval('public.commentaire_idcom_seq'),
-                USER_ID BIGINT NOT NULL,
+                username VARCHAR(36) NOT NULL,
                 titre VARCHAR(50) NOT NULL,
                 description VARCHAR(255) NOT NULL,
                 CONSTRAINT commentaire_pk PRIMARY KEY (idCom)
@@ -77,23 +66,16 @@ CREATE TABLE public.Bar (
 
 ALTER SEQUENCE public.bar_idbar_seq OWNED BY public.Bar.idBar;
 
-ALTER TABLE public.USER_ROLE ADD CONSTRAINT app_role_user_role_fk
-FOREIGN KEY (ROLE_ID)
-REFERENCES public.APP_ROLE (ROLE_ID)
-ON DELETE NO ACTION
-ON UPDATE NO ACTION
-NOT DEFERRABLE;
-
 ALTER TABLE public.Commentaire ADD CONSTRAINT app_user_commentaire_fk
-FOREIGN KEY (USER_ID)
-REFERENCES public.APP_USER (USER_ID)
+FOREIGN KEY (username)
+REFERENCES public.App_User (username)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION
 NOT DEFERRABLE;
 
-ALTER TABLE public.USER_ROLE ADD CONSTRAINT app_user_user_role_fk
-FOREIGN KEY (USER_ID)
-REFERENCES public.APP_USER (USER_ID)
+ALTER TABLE public.user_roles ADD CONSTRAINT app_user_user_roles_fk
+FOREIGN KEY (username)
+REFERENCES public.App_User (username)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION
 NOT DEFERRABLE;
