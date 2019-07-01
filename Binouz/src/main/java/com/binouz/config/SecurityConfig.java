@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -22,13 +23,10 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @EnableGlobalMethodSecurity(securedEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     
-    
-   
-    
-    
                       @Autowired
-                      UserDetailsService userDetailsService;
+                       private UserDetailsService userDetailsService;
                       
+    
                       @Autowired
                       public void configAuthentication(AuthenticationManagerBuilder auth) throws Exception {
                           auth.userDetailsService(userDetailsService).passwordEncoder(passwordencoder());;
@@ -41,6 +39,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Autowired
 	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+                        
+                            auth.userDetailsService(userDetailsService).passwordEncoder(bCryptPasswordEncoder());
             
                             auth.jdbcAuthentication().dataSource(dataSource)
                                     .usersByUsernameQuery("SELECT username, password, enabled FROM app_user WHERE username=? ")
@@ -48,50 +48,31 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
            
                              
 	}
+        
+        
+        @Bean(name="passwordEncoder")
+    public PasswordEncoder passwordencoder(){
+        return new BCryptPasswordEncoder();
+    }
+    
+    
+    //******************************************************************************************************************************************************
+    
 
-	@Override
-	protected void configure(HttpSecurity http) throws Exception {
-            
-            /*
-            http.authorizeRequests()
-                    .antMatchers("/index").access("hasRole('ROLE_ADMIN')")
-                    .anyRequest().permitAll()
-                    .and()
-                    
-                    .formLogin()
-                    .loginPage("/login")
-                    .usernameParameter("username").passwordParameter("password")
-                    
-                    .and()
-                    
-                    .logout().logoutSuccessUrl("/login?logout")
-                    .and()
-                    .exceptionHandling().accessDeniedPage("/403")
-                    .and()
-                    .csrf().disable();
-            
-            /*
-            http.authorizeRequests()
-                    .antMatchers("/", "index")
-                    .permitAll()
-                    .antMatchers("/admin")
-                    .hasRole("ADMIN")
-                    .anyRequest()
-                    .authenticated()
-                    .and()
-                    .formLogin()
-                    .loginPage("/login")
-                    .permitAll()
-                    .and()
-                    .logout()
-                    .permitAll();
-            
-            http.exceptionHandling().accessDeniedPage("/403");
-            
-            */
-            
-            http.authorizeRequests()
-                    .antMatchers("/addUser").permitAll();
+
+    @Bean
+    public BCryptPasswordEncoder bCryptPasswordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
+
+    
+    
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        
+        
+        http.authorizeRequests()
+                    .antMatchers("/registration").permitAll();
             
             
             http.authorizeRequests()
@@ -106,32 +87,24 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     
                     .defaultSuccessUrl("/index")
                     .failureUrl("/403");
-            
-            
-             
-
-
-            
-            /*
-	    http.authorizeRequests().antMatchers("/admin/**")
-		.access("hasRole('ROLE_ADMIN')").and().formLogin()
-		.loginPage("/login").failureUrl("/login?error")
-		.usernameParameter("username")
-		.passwordParameter("password")
-		.and().logout().logoutSuccessUrl("/login?logout")
-		.and().csrf()
-		.and().exceptionHandling().accessDeniedPage("/403");
-
-*/
-	}
-        
-         @Bean(name="passwordEncoder")
-    public PasswordEncoder passwordencoder(){
-        return new BCryptPasswordEncoder();
     }
-	
+
+    @Bean
+    public AuthenticationManager customAuthenticationManager() throws Exception {
+        return authenticationManager();
+    }
+
+
+}
+    
+    
+    
+    
+    
+    
+    
+    
 
     
     
-    
-}
+

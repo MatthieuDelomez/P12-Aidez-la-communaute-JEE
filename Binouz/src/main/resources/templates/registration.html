@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<html>
+    <head>
+        <title>Enregistrez-vous</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    
+    
+    
+    <body>
+        
+        <div layout:fragment="content" class="container mySpace">
+            <div class="alert alert-info" th:if="${exist}">
+	<p class="text text-center">
+	  User with this Email already Exist
+	</p>
+	</div>
+            <form th:action="@{/registration}" th:object="${appuser}" method="post">
+                
+                <div class="form-group">
+                    <label for="adresseMail" class="form-control-label">Email</label>
+                    <input type="text" class="form-control" th:field="*{adresseMail}" id="adresseMail" />
+                    <div class="text text-danger" th:if="${#fields.hasErrors('adresseMail')}" th:errors="*{adresseMail}"> </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password" class="form-control-label">Password</label>
+                    <input type="password" class="form-control" th:field="*{password}" id="password" />
+                    <div class="text text-danger" th:if="${#fields.hasErrors('password')}" th:errors="*{password}"> </div>
+
+                </div>
+                
+                 <div class="form-group">
+                    <label for="passwordConfirm" class="form-control-label">PasswordConfirm</label>
+                    <input type="password" class="form-control" th:field="*{passwordConfirm}" id="password" />
+                    <div class="text text-danger" th:if="${#fields.hasErrors('passwordConfirm')}" th:errors="*{passwordConfirm}"> </div>
+
+                </div>
+                
+                
+                <div class="form-group">
+                    <label for="username" class="form-control-label">Username</label>
+                    <input type="text" class="form-control" th:field="*{username}" id="username" />
+                     <div class="text text-danger" th:if="${#fields.hasErrors('username')}" th:errors="*{username}"> </div>
+
+                </div>
+                
+                <div class="form-group">
+                    <label for="nom" class="form-control-label">Nom</label>
+                    <input type="text" class="form-control" th:field="*{nom}" id="nom" />
+                    <div class="text text-danger" th:if="${#fields.hasErrors('nom')}" th:errors="*{nom}"> </div>
+                </div>
+                
+                
+                <div class="form-group">
+                    <label for="prenom" class="form-control-label">Prenom</label>
+                    <input type="prenom" class="form-control" th:field="*{prenom}" id="prenom" />
+                    <div class="text text-danger" th:if="${#fields.hasErrors('prenom')}" th:errors="*{prenom}"> </div>
+                </div>
+                
+                <input type="submit" value="Submit"  class="btn btn-primary"/>
+                
+                
+                
+                
+                
+                
+            </form>
+            
+            
+        </div>
+        
+      
+        
+        <!--
+        
+ <div>
+        <form th:action="@{/addUser}" method="post">
+            <div>
+                <label>Pseudo</label>
+                <input type="text" name="username"/>
+            </div>
+            
+            <div>
+                <label>Mail</label>
+                <input type="text" name="adresseMail"/>
+            </div>
+           
+
+            <div>
+                <label> Password:</label>
+                <input type="password" name="password"/>
+            </div>
+            
+            <div>
+                <label>Nom</label>
+                <input type="text" name="nom"/>
+            </div>
+            
+            <div>
+                <label>Prenom</label>
+                <input type="text" name="prenom"/>
+            </div>
+            
+            
+            
+            
+            <div>
+                <input type="submit" value="addUser"/>
+            </div>
+   
+        </form>
+    </div>    
+        
+        -->
+        
+        </body>
+    
+    
+    
+    
+    
+    
+</html>

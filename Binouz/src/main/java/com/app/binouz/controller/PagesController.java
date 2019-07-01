@@ -54,7 +54,7 @@ public class PagesController {
         return "/index";
     }
     
-    
+    /*
     @GetMapping("/addUser")
     public String addUser(Model model) {
       model.addAttribute("appuser" , new AppUser());
@@ -67,7 +67,7 @@ public class PagesController {
     }
     
     
-    
+    */
     
 
     @GetMapping("/403")
