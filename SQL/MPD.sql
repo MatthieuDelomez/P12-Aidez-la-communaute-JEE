@@ -13,14 +13,14 @@ CREATE TABLE public.App_User (
 CREATE SEQUENCE public.user_roles_id_seq;
 
 CREATE TABLE public.user_roles (
-                userRoleId BIGINT NOT NULL DEFAULT nextval('public.user_roles_id_seq'),
+                roleid BIGINT NOT NULL DEFAULT nextval('public.user_roles_id_seq'),
                 role VARCHAR(45) NOT NULL,
                 username VARCHAR(36) NOT NULL,
-                CONSTRAINT user_roles_pk PRIMARY KEY (userRoleId)
+                CONSTRAINT user_roles_pk PRIMARY KEY (roleid)
 );
 
 
-ALTER SEQUENCE public.user_roles_id_seq OWNED BY public.user_roles.userRoleId;
+ALTER SEQUENCE public.user_roles_id_seq OWNED BY public.user_roles.roleid;
 
 CREATE SEQUENCE public.commentaire_idcom_seq;
 

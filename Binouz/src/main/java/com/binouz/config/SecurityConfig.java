@@ -40,7 +40,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	@Autowired
 	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
                         
-                            auth.userDetailsService(userDetailsService).passwordEncoder(bCryptPasswordEncoder());
+                            auth.userDetailsService(userDetailsService)
+                                    
+                                    .passwordEncoder(bCryptPasswordEncoder());
             
                             auth.jdbcAuthentication().dataSource(dataSource)
                                     .usersByUsernameQuery("SELECT username, password, enabled FROM app_user WHERE username=? ")
@@ -73,6 +75,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         
         http.authorizeRequests()
                     .antMatchers("/registration").permitAll();
+                
             
             
             http.authorizeRequests()

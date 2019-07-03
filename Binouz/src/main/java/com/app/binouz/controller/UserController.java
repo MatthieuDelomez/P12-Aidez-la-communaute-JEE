@@ -50,7 +50,7 @@ public class UserController {
         }
         
         userService.save(appUser);
-                securityService.autoLogin(appUser.getUsername(), appUser.getPasswordConfirm());
+                securityService.autoLogin(appUser.getUsername(), appUser.getPassword());
                 
                 return "/index";
 

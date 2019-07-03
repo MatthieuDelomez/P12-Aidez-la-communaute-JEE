@@ -22,7 +22,7 @@ import javax.persistence.UniqueConstraint;
 
 
 @Entity
-@Table(name= "app_user", uniqueConstraints = {
+@Table(name= "App_User", uniqueConstraints = {
     @UniqueConstraint(name = "APP_USER_UK", columnNames = "username"), 
     @UniqueConstraint(name = "APP_USER_GM", columnNames = "adresse_mail")})
 public class AppUser implements Serializable{
@@ -49,10 +49,10 @@ public class AppUser implements Serializable{
    @Column(name = "enabled", length = 30, nullable = true)
    private boolean enabled;
    
-   
+   /*
    @Transient
     private String passwordConfirm;
-   
+   */
    
    
    @ManyToMany
@@ -129,14 +129,14 @@ public class AppUser implements Serializable{
         this.enabled = enabled;
     }
 
-
+/*
     public String getPasswordConfirm() {
         return passwordConfirm;
     }
 
     public void setPasswordConfirm(String passwordConfirm) {
         this.passwordConfirm = passwordConfirm;
-    }
+    }*/
 
     public Set<UserRole> getRoles() {
         return roles;
