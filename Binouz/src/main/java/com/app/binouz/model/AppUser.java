@@ -30,7 +30,7 @@ public class AppUser implements Serializable{
     
 
    @Id
-   @GeneratedValue(strategy = GenerationType.IDENTITY)
+   //@GeneratedValue(strategy = GenerationType.IDENTITY)
    @Column(name = "username", length = 36, nullable = false)
     private String username;
     
@@ -76,10 +76,7 @@ public class AppUser implements Serializable{
         this.prenom = prenom;
         this.enabled = enabled;
     }
-    
-    
-  
-         
+ 
 
     public String getUsername() {
         return username;

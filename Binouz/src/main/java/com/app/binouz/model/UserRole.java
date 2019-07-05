@@ -22,7 +22,7 @@ import javax.persistence.UniqueConstraint;
 
 
 @Entity
-@Table(name = "user_roles")
+@Table(name = "role")
 public class UserRole implements Serializable{
     
                      @Id
@@ -30,20 +30,17 @@ public class UserRole implements Serializable{
                       @Column(name = "roleid", nullable = false)
                       private Long userRoleId;
                      
-                      @Column(name = "role", length =45 , nullable = false)
-                      private String role;
                       
+                       @Column(name = "role", length = 45, nullable = false)
+	private String role;
+                       
                        @Column(name = "username", length = 36, nullable = false)
-	private AppUser username;
+	private String username;
                        
                        
                        
                        @ManyToMany(mappedBy = "roles")
                         private Set<AppUser> users;
-
-        
-        
-        
 
     public Long getUserRoleId() {
         return userRoleId;
@@ -61,11 +58,11 @@ public class UserRole implements Serializable{
         this.role = role;
     }
 
-    public AppUser getUsername() {
+    public String getUsername() {
         return username;
     }
 
-    public void setUsername(AppUser username) {
+    public void setUsername(String username) {
         this.username = username;
     }
 
@@ -76,6 +73,16 @@ public class UserRole implements Serializable{
     public void setUsers(Set<AppUser> users) {
         this.users = users;
     }
+                       
+                       
+
+                       
+                       
+
+        
+        
+
+  
     
     
 
