@@ -1,45 +1,62 @@
 
 package com.app.binouz.model;
 
+import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 
-@Table(name="Biere")
+//@Table(name="Biere")
 @Entity
-public class Biere {
+public class Biere implements Serializable {
     
     /*
     Création des variables qui regroupe la biere
     */
     @Id
-    @GeneratedValue
-    @Column(unique = true)
+    @Column(name = "idbiere")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idbiere;
     
-    private String nom;
+    @Column(name = "nombiere")
+    private String nombiere;
+    
+    @Column(name = "nombar")
+    private String nombar;
+    
+    @Column(name = "variete")
     private String variete;
+    
+    @Column(name = "region")
     private String region;
+    
+    @Column(name = "degres")
     private float degres;
 
     /*
     Constructeur
     */
-    public Biere(int idbiere, String nom, String variete, String region, float degres) {
-        this.idbiere = idbiere;
-        this.nom = nom;
+    public Biere(String nombiere, String nombar, String variete, String region, float degres) {
+        super();
+        this.nombiere = nombiere;
+        this.nombar = nombar;
         this.variete = variete;
         this.region = region;
         this.degres = degres;
     }
+  
+    
+
     
     /*
     Constructeur par default pour JSon
     */
     public Biere() {
+        super();
     }
     
 
@@ -47,21 +64,32 @@ public class Biere {
     /*
     Invocation des Getters & Setters
     */
-    public int getIdBiere() {
+
+    public int getIdbiere() {
         return idbiere;
     }
 
-    public void setIdBiere(int idbiere) {
+    public void setIdbiere(int idbiere) {
         this.idbiere = idbiere;
     }
 
-    public String getNom() {
-        return nom;
+    public String getNombiere() {
+        return nombiere;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void setNombiere(String nombiere) {
+        this.nombiere = nombiere;
     }
+
+    public String getNombar() {
+        return nombar;
+    }
+
+    public void setNombar(String nombar) {
+        this.nombar = nombar;
+    }
+
+
 
     public String getVariete() {
         return variete;
@@ -86,12 +114,8 @@ public class Biere {
     public void setDegres(float degres) {
         this.degres = degres;
     }
-
-    @Override
-    public String toString() {
-        return "Biere{" + "idbiere=" + idbiere + ", nom=" + nom + ", variete=" + variete + ", region=" + region + ", degres=" + degres + '}';
-    }
     
+   
     
     
     

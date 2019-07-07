@@ -1,14 +1,14 @@
 ﻿INSERT INTO public.biere(
-idBar,
-nom,
+nombiere,
+nombar,
 variete,
 region,
 degres
 )
 
 VALUES(
-1,
 'Duvel',
+'La fée des Trolls',
 'Blonde',
 'Flandre',
 '8.5'

@@ -17,11 +17,7 @@ public class Bar implements Serializable {
     /*
     Création des variables qui vont definir le Bar
     */
-    @Id
-     @Column(name = "idbar")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idBar;
-    
+    @Id    
     @Column(name = "nom")
     private String nom;
     
@@ -54,16 +50,7 @@ public class Bar implements Serializable {
         super();
     }
 
-    
-    
 
-    public Long getIdBar() {
-        return idBar;
-    }
-
-    public void setIdBar(Long idBar) {
-        this.idBar = idBar;
-    }
 
     public String getNom() {
         return nom;

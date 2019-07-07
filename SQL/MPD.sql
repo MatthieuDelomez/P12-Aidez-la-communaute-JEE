@@ -35,28 +35,23 @@ CREATE TABLE public.Commentaire (
 
 ALTER SEQUENCE public.commentaire_idcom_seq OWNED BY public.Commentaire.idCom;
 
-CREATE SEQUENCE public.bar_idbar_seq;
-
 CREATE TABLE public.Bar (
-                idBar BIGINT NOT NULL DEFAULT nextval('public.bar_idbar_seq'),
-                nom VARCHAR(255) NOT NULL,
+                nom VARCHAR(90) NOT NULL,
                 adresse VARCHAR(255) NOT NULL,
                 postal VARCHAR NOT NULL,
                 ville VARCHAR(255) NOT NULL,
                 description VARCHAR(255) NOT NULL,
                 note REAL,
-                CONSTRAINT bar_pk PRIMARY KEY (idBar)
+                CONSTRAINT bar_pk PRIMARY KEY (nom)
 );
 
-
-ALTER SEQUENCE public.bar_idbar_seq OWNED BY public.Bar.idBar;
 
 CREATE SEQUENCE public.biere_idbiere_seq;
 
 CREATE TABLE public.Biere (
                 idBiere INTEGER NOT NULL DEFAULT nextval('public.biere_idbiere_seq'),
-                idBar BIGINT NOT NULL,
-                nom VARCHAR(255) NOT NULL,
+                nombiere VARCHAR(90) NOT NULL,
+                nombar VARCHAR(90) NOT NULL,
                 variete VARCHAR(255) NOT NULL,
                 region VARCHAR(255) NOT NULL,
                 degres REAL NOT NULL,
@@ -81,8 +76,8 @@ ON UPDATE NO ACTION
 NOT DEFERRABLE;
 
 ALTER TABLE public.Biere ADD CONSTRAINT bar_biere_fk
-FOREIGN KEY (idBar)
-REFERENCES public.Bar (idBar)
+FOREIGN KEY (nombar)
+REFERENCES public.Bar (nom)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION
 NOT DEFERRABLE;
