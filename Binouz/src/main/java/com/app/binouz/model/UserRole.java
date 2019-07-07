@@ -22,12 +22,11 @@ import javax.persistence.UniqueConstraint;
 
 
 @Entity
-@Table(name = "role")
 public class UserRole implements Serializable{
     
                      @Id
                      @GeneratedValue(strategy = GenerationType.IDENTITY)
-                      @Column(name = "roleid", nullable = false)
+                      @Column(name = "userRoleId", nullable = false)
                       private Long userRoleId;
                      
                       
@@ -39,7 +38,7 @@ public class UserRole implements Serializable{
                        
                        
                        
-                       @ManyToMany(mappedBy = "roles")
+                       @ManyToMany  //(mappedBy = "roles")
                         private Set<AppUser> users;
 
     public Long getUserRoleId() {

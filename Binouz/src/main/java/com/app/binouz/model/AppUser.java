@@ -30,7 +30,6 @@ public class AppUser implements Serializable{
     
 
    @Id
-   //@GeneratedValue(strategy = GenerationType.IDENTITY)
    @Column(name = "username", length = 36, nullable = false)
     private String username;
     

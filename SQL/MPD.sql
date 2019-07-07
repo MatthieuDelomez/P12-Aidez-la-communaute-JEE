@@ -35,10 +35,27 @@ CREATE TABLE public.Commentaire (
 
 ALTER SEQUENCE public.commentaire_idcom_seq OWNED BY public.Commentaire.idCom;
 
+CREATE SEQUENCE public.bar_idbar_seq;
+
+CREATE TABLE public.Bar (
+                idBar BIGINT NOT NULL DEFAULT nextval('public.bar_idbar_seq'),
+                nom VARCHAR(255) NOT NULL,
+                adresse VARCHAR(255) NOT NULL,
+                postal VARCHAR NOT NULL,
+                ville VARCHAR(255) NOT NULL,
+                description VARCHAR(255) NOT NULL,
+                note REAL,
+                CONSTRAINT bar_pk PRIMARY KEY (idBar)
+);
+
+
+ALTER SEQUENCE public.bar_idbar_seq OWNED BY public.Bar.idBar;
+
 CREATE SEQUENCE public.biere_idbiere_seq;
 
 CREATE TABLE public.Biere (
                 idBiere INTEGER NOT NULL DEFAULT nextval('public.biere_idbiere_seq'),
+                idBar BIGINT NOT NULL,
                 nom VARCHAR(255) NOT NULL,
                 variete VARCHAR(255) NOT NULL,
                 region VARCHAR(255) NOT NULL,
@@ -48,23 +65,6 @@ CREATE TABLE public.Biere (
 
 
 ALTER SEQUENCE public.biere_idbiere_seq OWNED BY public.Biere.idBiere;
-
-CREATE SEQUENCE public.bar_idbar_seq;
-
-CREATE TABLE public.Bar (
-                idBar INTEGER NOT NULL DEFAULT nextval('public.bar_idbar_seq'),
-                idBiere INTEGER NOT NULL,
-                nom VARCHAR(255) NOT NULL,
-                adresse VARCHAR(255) NOT NULL,
-                codePostal VARCHAR NOT NULL,
-                ville VARCHAR(255) NOT NULL,
-                description VARCHAR(255) NOT NULL,
-                note REAL NOT NULL,
-                CONSTRAINT bar_pk PRIMARY KEY (idBar)
-);
-
-
-ALTER SEQUENCE public.bar_idbar_seq OWNED BY public.Bar.idBar;
 
 ALTER TABLE public.Commentaire ADD CONSTRAINT app_user_commentaire_fk
 FOREIGN KEY (username)
@@ -80,9 +80,9 @@ ON DELETE NO ACTION
 ON UPDATE NO ACTION
 NOT DEFERRABLE;
 
-ALTER TABLE public.Bar ADD CONSTRAINT biere_bar_fk
-FOREIGN KEY (idBiere)
-REFERENCES public.Biere (idBiere)
+ALTER TABLE public.Biere ADD CONSTRAINT bar_biere_fk
+FOREIGN KEY (idBar)
+REFERENCES public.Bar (idBar)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION
 NOT DEFERRABLE;

@@ -1,15 +1,13 @@
 ﻿INSERT INTO public.bar(
-idBiere,
 nom,
 adresse,
-codePostal,
+postal,
 ville,
 description,
 note
 )
 
 VALUES(
-1,
 'La fée des Trolls',
 '12 rue Solférino',
 '59000',

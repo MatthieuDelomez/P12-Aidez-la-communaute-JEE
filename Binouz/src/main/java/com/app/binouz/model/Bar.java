@@ -1,39 +1,68 @@
 
 package com.app.binouz.model;
 
+import java.io.Serializable;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
-public class Bar {
+
+@Entity
+//@Table(name = "Bar")
+public class Bar implements Serializable {
     
     /*
     Création des variables qui vont definir le Bar
     */
-    private int idBar;
-    private int idBiere;
+    @Id
+     @Column(name = "idbar")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long idBar;
     
+    @Column(name = "nom")
     private String nom;
+    
+    @Column(name = "adresse")
     private String adresse;
-    private String codePostal;
+    
+    @Column(name = "postal")
+    private String postal;
+    
+    @Column(name = "ville")
     private String ville;
+    
+    @Column(name = "description")
     private String description;
+    
+    @Column(name = "note")
     private float note;
     
-    /*
-    Invocation des variables
-    */
-    public int getIdBar() {
+    
+
+    public Bar( String nom, String adresse, String postal, String ville, String description) {
+        this.nom = nom;
+        this.adresse = adresse;
+        this.postal = postal;
+        this.ville = ville;
+        this.description = description;
+    }
+
+    public Bar() {
+        super();
+    }
+
+    
+    
+
+    public Long getIdBar() {
         return idBar;
     }
 
-    public void setIdBar(int idBar) {
+    public void setIdBar(Long idBar) {
         this.idBar = idBar;
-    }
-
-    public int getIdBiere() {
-        return idBiere;
-    }
-
-    public void setIdBiere(int idBiere) {
-        this.idBiere = idBiere;
     }
 
     public String getNom() {
@@ -52,12 +81,12 @@ public class Bar {
         this.adresse = adresse;
     }
 
-    public String getCodePostal() {
-        return codePostal;
+    public String getPostal() {
+        return postal;
     }
 
-    public void setCodePostal(String codePostal) {
-        this.codePostal = codePostal;
+    public void setPostal(String postal) {
+        this.postal = postal;
     }
 
     public String getVille() {
