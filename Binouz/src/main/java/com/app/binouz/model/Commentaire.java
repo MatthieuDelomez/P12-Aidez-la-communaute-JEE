@@ -1,15 +1,36 @@
 
 package com.app.binouz.model;
 
+import java.io.Serializable;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-public class Commentaire {
+
+
+@Entity
+public class Commentaire implements Serializable {
     
     /*
     Création des variable qui vot definir les commentaires
     */
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "idcom")
     private int idCom;
-    private Long userId;
+    
+    @Column(name = "username")
+    private String username;
+    
+    @Column(name = "titre")
     private String titre;
+    
+    @Column(name = "nombar")
+    private String nombar;
+    
+    @Column(name = "description")
     private String description;
 
     /*
@@ -23,12 +44,12 @@ public class Commentaire {
         this.idCom = idCom;
     }
 
-    public Long getUserId() {
-        return userId;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUserId(Long userId) {
-        this.userId = userId;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getTitre() {
@@ -39,6 +60,14 @@ public class Commentaire {
         this.titre = titre;
     }
 
+    public String getNombar() {
+        return nombar;
+    }
+
+    public void setNombar(String nombar) {
+        this.nombar = nombar;
+    }
+
     public String getDescription() {
         return description;
     }
@@ -46,6 +75,8 @@ public class Commentaire {
     public void setDescription(String description) {
         this.description = description;
     }
+    
+   
     
   
     

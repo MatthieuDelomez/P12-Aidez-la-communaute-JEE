@@ -3,8 +3,7 @@ nom,
 adresse,
 postal,
 ville,
-description,
-note
+description
 )
 
 VALUES(
@@ -12,6 +11,5 @@ VALUES(
 '12 rue Solférino',
 '59000',
 'Lille',
-'Bar dans la rue de Solférino à lambiance rustique et sympatique',
-'4'
+'Bar dans la rue de Solférino à lambiance rustique et sympatique'
 );

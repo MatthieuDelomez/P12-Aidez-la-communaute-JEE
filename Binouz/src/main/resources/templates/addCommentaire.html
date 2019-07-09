@@ -57,33 +57,31 @@
 
 
     <div class="container my-5">
-        <h3> Add biere</h3>
+        <h3> Add a Com</h3>
         <div class="card">
             <div class="card-body">
                 <div class="col-md-10">
-                    <form action="#" th:action="@{/addBiere}" th:object="${biere}" method="post">
+                    <form action="#" th:action="@{/addCommentaire}" th:object="${commentaire}" method="post">
                         <div class="row">
                             
                             
                             <div class="form-group col-md-8">
-                                <label for="nombiere" class="col-form-label">Nom de la Bière</label> <input type="text" th:field="*{nombiere}" class="form-control" id="nombiere" placeholder="NomBiere"> <span th:if="${#fields.hasErrors('nombiere')}" th:errors="*{nombiere}" class="text-danger"></span>
+                                <label for="username" class="col-form-label">Entrez votre Pseudo:</label> <input type="text" th:field="*{username}" class="form-control" id="username" placeholder="username"> <span th:if="${#fields.hasErrors('username')}" th:errors="*{username}" class="text-danger"></span>
                             </div>
                             <div class="form-group col-md-8">
-                                <label for="nombar" class="col-form-label">Nom du Bar</label> <input type="text" th:field="*{nombar}" class="form-control" id="nombar" placeholder="NomBar"> <span th:if="${#fields.hasErrors('nombar')}" th:errors="*{nombar}" class="text-danger"></span>
+                                <label for="titre" class="col-form-label">Titre de votre Commentaire:</label> <input type="text" th:field="*{titre}" class="form-control" id="titre" placeholder="titre"> <span th:if="${#fields.hasErrors('titre')}" th:errors="*{titre}" class="text-danger"></span>
                             </div>
                             <div class="form-group col-md-8">
-                                <label for="variete" class="col-form-label">Variete</label> <input type="text" th:field="*{variete}" class="form-control" id="variete" placeholder="Variete"> <span th:if="${#fields.hasErrors('variete')}" th:errors="*{variete}" class="text-danger"></span>
+                                <label for="nombar" class="col-form-label">Nom du Bar:</label> <input type="text" th:field="*{nombar}" class="form-control" id="nombar" placeholder="nombar"> <span th:if="${#fields.hasErrors('nombar')}" th:errors="*{nombar}" class="text-danger"></span>
                             </div>
                             <div class="form-group col-md-8">
-                                <label for="region" class="col-form-label">Region</label> <input type="text" th:field="*{region}" class="form-control" id="region" placeholder="Region"> <span th:if="${#fields.hasErrors('region')}" th:errors="*{region}" class="text-danger"></span>
+                                <label for="description" class="col-form-label">Description:</label> <input type="text" th:field="*{description}" class="form-control" id="description" placeholder="description"> <span th:if="${#fields.hasErrors('description')}" th:errors="*{description}" class="text-danger"></span>
                             </div>
-                            <div class="form-group col-md-8">
-                                <label for="degres" class="col-form-label">Degres</label> <input type="text" th:field="*{degres}" class="form-control" id="degres" placeholder="degres"> <span th:if="${#fields.hasErrors('degres')}" th:errors="*{degres}" class="text-danger"></span>
-                            </div>
+                            
 
 
                             <div class="col-md-6">
-                                <input type="submit" class="btn btn-primary" value="Ajoutez votre bière">
+                                <input type="submit" class="btn btn-primary" value="Ajoutez votre commentaire">
                             </div>
 
                             <div class="form-group col-md-8"></div>

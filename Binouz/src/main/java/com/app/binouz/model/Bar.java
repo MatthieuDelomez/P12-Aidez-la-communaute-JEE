@@ -32,9 +32,7 @@ public class Bar implements Serializable {
     
     @Column(name = "description")
     private String description;
-    
-    @Column(name = "note")
-    private float note;
+
     
     
 
@@ -92,13 +90,7 @@ public class Bar implements Serializable {
         this.description = description;
     }
 
-    public float getNote() {
-        return note;
-    }
 
-    public void setNote(float note) {
-        this.note = note;
-    }
     
     
 }

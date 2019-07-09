@@ -22,29 +22,29 @@ CREATE TABLE public.user_roles (
 
 ALTER SEQUENCE public.user_roles_id_seq OWNED BY public.user_roles.userRoleId;
 
-CREATE SEQUENCE public.commentaire_idcom_seq;
-
-CREATE TABLE public.Commentaire (
-                idCom INTEGER NOT NULL DEFAULT nextval('public.commentaire_idcom_seq'),
-                username VARCHAR(36) NOT NULL,
-                titre VARCHAR(50) NOT NULL,
-                description VARCHAR(255) NOT NULL,
-                CONSTRAINT commentaire_pk PRIMARY KEY (idCom)
-);
-
-
-ALTER SEQUENCE public.commentaire_idcom_seq OWNED BY public.Commentaire.idCom;
-
 CREATE TABLE public.Bar (
                 nom VARCHAR(90) NOT NULL,
                 adresse VARCHAR(255) NOT NULL,
                 postal VARCHAR NOT NULL,
                 ville VARCHAR(255) NOT NULL,
                 description VARCHAR(255) NOT NULL,
-                note REAL,
                 CONSTRAINT bar_pk PRIMARY KEY (nom)
 );
 
+
+CREATE SEQUENCE public.commentaire_idcom_seq;
+
+CREATE TABLE public.Commentaire (
+                idCom INTEGER NOT NULL DEFAULT nextval('public.commentaire_idcom_seq'),
+                username VARCHAR(36) NOT NULL,
+                titre VARCHAR(50) NOT NULL,
+                nombar VARCHAR(90) NOT NULL,
+                description VARCHAR(255) NOT NULL,
+                CONSTRAINT commentaire_pk PRIMARY KEY (idCom)
+);
+
+
+ALTER SEQUENCE public.commentaire_idcom_seq OWNED BY public.Commentaire.idCom;
 
 CREATE SEQUENCE public.biere_idbiere_seq;
 
@@ -76,6 +76,13 @@ ON UPDATE NO ACTION
 NOT DEFERRABLE;
 
 ALTER TABLE public.Biere ADD CONSTRAINT bar_biere_fk
+FOREIGN KEY (nombar)
+REFERENCES public.Bar (nom)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE;
+
+ALTER TABLE public.Commentaire ADD CONSTRAINT bar_commentaire_fk
 FOREIGN KEY (nombar)
 REFERENCES public.Bar (nom)
 ON DELETE NO ACTION
