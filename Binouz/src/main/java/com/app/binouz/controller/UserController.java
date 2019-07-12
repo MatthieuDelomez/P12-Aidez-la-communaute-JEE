@@ -45,7 +45,6 @@ public class UserController {
     
     
     @PostMapping("/registration")
-    //@Secured(value =  "ROLE_USER")
     public String registration(@ModelAttribute("appuser") AppUser appUser, BindingResult bindingResult, String role) {
         
         userValidator.validate(appUser, bindingResult);
@@ -57,7 +56,7 @@ public class UserController {
         
         
         userService.save(appUser);
-                        securityService.autoLogin(appUser.getUsername(), appUser.getPassword());
+        securityService.autoLogin(appUser.getUsername(), appUser.getPassword());
                 
                 return "/index";
 

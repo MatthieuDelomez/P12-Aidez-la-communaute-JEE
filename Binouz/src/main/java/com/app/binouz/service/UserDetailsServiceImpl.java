@@ -19,6 +19,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 
 @Service("UserDetailsService")
+
 public class UserDetailsServiceImpl  implements UserDetailsService {
     
     

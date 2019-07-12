@@ -18,6 +18,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 
 @Service("UserService")
+
 public class UserServiceImpl implements UserService {
     
     @Autowired

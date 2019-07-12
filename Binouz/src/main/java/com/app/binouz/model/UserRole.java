@@ -38,7 +38,7 @@ public class UserRole implements Serializable{
                        
                        
                        
-                       @ManyToMany  //(mappedBy = "roles")
+                       @ManyToMany  (mappedBy = "roles")
                         private Set<AppUser> users;
 
     public Long getUserRoleId() {

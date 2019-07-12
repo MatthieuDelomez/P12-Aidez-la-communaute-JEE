@@ -47,12 +47,7 @@ public class AppUser implements Serializable{
    
    @Column(name = "enabled", length = 30, nullable = true)
    private boolean enabled;
-   
-   /*
-   @Transient
-    private String passwordConfirm;
-   */
-   
+
    
    @ManyToMany
    private Set<UserRole> roles;

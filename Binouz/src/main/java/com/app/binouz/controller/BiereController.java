@@ -100,56 +100,22 @@ public class BiereController {
     PARTIE RESERVE A LA MODERATION DE APPLICATION
     ************************************************************
     */
-    
     @GetMapping("/deleteBiere")
-    public String deleteBiereGet(Model model){
-        model.addAttribute("biere", new Biere());
+    public String deleteBiereGet(@Valid Biere biere, BindingResult result,Model model, String nombiere){
+        
+
+        biereRepository.deleteByNombiere(nombiere);
+        
+        System.out.println("=======================>" +nombiere + "<=============================");
         
         
         return "deleteBiere";
         
+        
+
+        
     }
-    /*
-    @PostMapping("delete/{idbiere}")
-    public String deleteBiere(@PathVariable("idbiere") int idbiere, @Valid Biere biere, BindingResult result,
-        Model model) {
-        if (result.hasErrors()) {
-            biere.setIdbiere(idbiere);
-            return "delete-biere";
-        }
-
-        biereRepository.delete(biere);
-        model.addAttribute("bieres", biereRepository.findAll());
-        return "index";
-    }*/
-    
-    //**********************************************************//
-    
-    /*
-
-    @PostMapping("/deleteBiere")        
-        public String deleteBiere(@Valid Biere biere, BindingResult result, Model model) {
-        if (result.hasErrors()) {
-            return "deleteBiere";
-        }
-
-        biereRepository.delete(biere);
-        return "/index";
-    }*/
-        
-        /*
-         @GetMapping("delete/{idbiere}")
-    public String deleteStudent(@PathVariable("idbiere") int idbiere, Model model) {
-        Biere biere =  biereRepository.findById(idbiere)
-                
-                
-           .orElseThrow(() - > new IllegalArgumentException("Invalid student Id:" + idbiere));
-        
-        
-        biereRepository.delete(biere);
-        model.addAttribute("bieres", biereRepository.findAll());
-        return "index";
-    }*/
+  
     
     }
     

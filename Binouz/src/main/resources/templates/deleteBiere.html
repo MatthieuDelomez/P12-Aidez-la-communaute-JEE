@@ -11,27 +11,13 @@
 </head>
 
 <body>
-    <div class="container my-5">
-        <h3> Delete Biere</h3>
-        <div class="card">
-            <div class="card-body">
-                <div class="col-md-8">
-                    <form action="#" th:action="@{/bieres/delete/{idbiere}(idbiere=${biere.idbiere})}" th:object="${biere}" method="post">
-                        <div class="row">
-                            <div class="form-group col-md-6">
-                                <label for="idbiere" class="col-form-label">Name</label> <input type="number" th:field="*{idbiere}" class="form-control" id="idbiere" placeholder="idbiere"> <span th:if="${#fields.hasErrors('idbiere')}" th:errors="*{idbiere}" class="text-danger"></span>
-                            </div>
-                            
 
-
-                            <div class="form-group col-md-8">
-                                <input type="submit" class="btn btn-primary" value="Update Student">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+            
+ <h2>Find Beer... Hmmm That Need Beer!</h2>
+    <form action="#" th:action="@{/deleteBiere}" method="get">
+    <label for="nombiere">Search:</label> <input name="nombiere">
+    </input>
+    
+    
 </body>
 </html>

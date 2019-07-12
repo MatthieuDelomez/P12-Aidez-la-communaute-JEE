@@ -12,6 +12,7 @@ import org.springframework.validation.Validator;
 
 
 @Component
+
 public class UserValidator implements Validator{
     
     @Autowired
