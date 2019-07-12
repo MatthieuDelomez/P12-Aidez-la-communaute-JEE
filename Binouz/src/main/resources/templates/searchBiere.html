@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Search Biere</title>
+        <link rel="stylesheet" th:href="@{/css/style.css}" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />        
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+    </head>
+    <body>
+        
+        
+ <h2>Find Beer... Hmmm That Need Beer!</h2>
+    <form action="#" th:action="@{/searchBiere}" method="get">
+    <label for="nombiere">Search:</label> <input name="nombiere">
+    </input>
+    
+    <br>
+    <br>
+    <br>
+    
+    
+    <table>
+    <thead>
+        <tr>
+            <th> Nom de la Bière </th>
+            <th> Nom du Bar </th>
+            <th> Variete </th>
+            <th> Region </th>
+            <th> Degres </th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr th:if="${nombieres.empty}">
+            <td colspan="5"> No Beer Available </td>
+        </tr>
+        <tr th:each="nombiere : ${nombieres}">
+            <td><span th:text="${nombiere.nombiere}"> Nom de la Bière </span></td>
+            <td><span th:text="${nombiere.nombar}"> Nom du Bar </span></td>
+            <td><span th:text="${nombiere.variete}"> Variete </span></td>
+            <td><span th:text="${nombiere.region}"> Region </span></td>
+            <td><span th:text="${nombiere.degres}"> Degres </span></td>
+        </tr>
+    </tbody>
+</table>
+    
+
+    
+    
+  </form>
+
+    </body>
+</html>

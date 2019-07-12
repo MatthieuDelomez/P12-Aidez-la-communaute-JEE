@@ -46,7 +46,7 @@ public class UserController {
     
     @PostMapping("/registration")
     //@Secured(value =  "ROLE_USER")
-    public String registration(@ModelAttribute("appuser") AppUser appUser, BindingResult bindingResult) {
+    public String registration(@ModelAttribute("appuser") AppUser appUser, BindingResult bindingResult, String role) {
         
         userValidator.validate(appUser, bindingResult);
         
@@ -54,7 +54,6 @@ public class UserController {
         if(bindingResult.hasErrors()) {
             return "registration";
         }
-        
         
         
         userService.save(appUser);
