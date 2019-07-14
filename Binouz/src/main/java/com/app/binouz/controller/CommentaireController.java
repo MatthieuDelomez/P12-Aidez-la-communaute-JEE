@@ -49,4 +49,48 @@ public class CommentaireController {
     }
     
     
+    @GetMapping("listCom")
+    public String showUpdateForm(Model model) {
+        model.addAttribute("commentaires", commentaireRepository.findAll());
+        return "listCom";
+    }
+    
+    
+    
+    
+    
+        /*
+    ************************************************************
+    PARTIE RESERVE A LA MODERATION DE APPLICATION
+    ************************************************************
+    */
+    @GetMapping("/deleteCom")
+    public String deleteCommentaireGet(Model model){
+        model.addAttribute("commentaire", new Commentaire());
+        
+        
+        return "deleteCom";
+        
+    }
+    
+    
+    
+    
+    @PostMapping("/deleteCom")
+    public String deleteBiereGet(@Valid Commentaire commentaire, BindingResult result,Model model, Integer idcom){
+        
+
+        commentaireRepository.deleteById(idcom);
+        
+        System.out.println("=======================>" +idcom + "<=============================");
+        
+        
+        return "index";
+        
+        
+
+        
+    }
+    
+    
 }

@@ -25,8 +25,49 @@ public class BarController {
     public BarController(BarRepository barRepository) {
         this.barRepository = barRepository;
     }
+    
+    
+    @GetMapping("listBar")
+    public String showUpdateForm(Model model) {
+        model.addAttribute("bars", barRepository.findAll());
+        return "listBar";
+    }
 
 
+
+    
+   
+
+    
+        /*
+    ************************************************************
+    PARTIE RESERVE A LA MODERATION DE APPLICATION
+    ************************************************************
+    */
+    @GetMapping("/deleteBar")
+    public String deleteBarGet(Model model){
+        model.addAttribute("bar", new Bar());
+        
+        
+        return "deleteBar";
+        
+    }
+    
+    
+    
+    @PostMapping("/deleteBar")
+    public String deleteBiereGet(@Valid Bar bar, BindingResult result,Model model, String nom){
+        
+
+        barRepository.deleteByNom(nom);
+        
+        System.out.println("=======================>" +nom + "<=============================");
+        
+        
+        return "index";
+        
+        
+         }
 
     
     @GetMapping("/addBar")
@@ -49,15 +90,4 @@ public class BarController {
         return "/index";
     }
 
-   
-/*
-    @GetMapping("delete/{id}")
-    public String deleteStudent(@PathVariable("id") long id, Model model) {
-        Student student = studentRepository.findById(id)
-            .orElseThrow(() - > new IllegalArgumentException("Invalid student Id:" + id));
-        studentRepository.delete(student);
-        model.addAttribute("students", studentRepository.findAll());
-        return "index";
-    }
-*/
 }

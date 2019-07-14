@@ -63,15 +63,6 @@ public class BiereController {
         return "listBiere";
     }
     
-    /*
-    @GetMapping("searchBiere")
-    public String searchBeer(Model model, String nombiere) {
-        model.addAttribute("bieres", biereRepository.findByNombiere(nombiere));
-        return "searchBiere";
-    }
-    
-*/
-    
 
     
     
