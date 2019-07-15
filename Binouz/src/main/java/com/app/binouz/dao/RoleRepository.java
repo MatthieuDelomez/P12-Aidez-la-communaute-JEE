@@ -20,4 +20,5 @@ public interface RoleRepository extends JpaRepository<UserRole, Long>{
     
     
     
+    
 }

@@ -54,7 +54,7 @@ public class UserController {
             return "registration";
         }
         
-        
+        roleRepository.findByRole("ROLE_USER");
         userService.save(appUser);
         securityService.autoLogin(appUser.getUsername(), appUser.getPassword());
                 
