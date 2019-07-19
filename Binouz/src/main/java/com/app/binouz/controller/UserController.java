@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class UserController {
     
+    
     @Autowired
     private UserService userService;
     
@@ -54,7 +55,9 @@ public class UserController {
             return "registration";
         }
         
-        roleRepository.findByRole("ROLE_USER");
+        
+        
+   //     roleRepository.findByRole(role);
         userService.save(appUser);
         securityService.autoLogin(appUser.getUsername(), appUser.getPassword());
                 

@@ -17,7 +17,7 @@ public class Commentaire implements Serializable {
     Création des variable qui vot definir les commentaires
     */
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "idcom")
     private int idcom;
     

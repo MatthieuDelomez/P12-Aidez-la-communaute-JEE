@@ -3,5 +3,5 @@ rolename
 )
 
 VALUES(
-'ROLE_ADMIN'
+'ROLE_USER'
 );

@@ -53,10 +53,7 @@ public class AppUser implements Serializable{
    private Set<UserRole> roles;
    
    
-   
-   
-   
-   
+
 
     public AppUser() {
         super();
@@ -136,6 +133,10 @@ public class AppUser implements Serializable{
     public void setRoles(Set<UserRole> roles) {
         this.roles = roles;
     }
+
+
+    
+    
     
     
 

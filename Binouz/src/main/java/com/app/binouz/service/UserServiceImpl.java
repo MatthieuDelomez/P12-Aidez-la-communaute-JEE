@@ -18,7 +18,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 
 @Service("UserService")
-
 public class UserServiceImpl implements UserService {
     
     @Autowired
@@ -34,7 +33,7 @@ public class UserServiceImpl implements UserService {
     public void save(AppUser user) {
         user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
         
-        user.setRoles(new HashSet<>(roleRepository.findAll()));
+        user.setRoles(new HashSet<>(roleRepository.findByRole("ROLE_USER")));
         userRepository.save(user);
         
         
