@@ -12,7 +12,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 
-
+/*
+Classe controller qui va gérer les méthodes relatives aux Commentaires
+*
+@Author: Matthieu Delomez
+*/
 @Controller
 public class CommentaireController {
     

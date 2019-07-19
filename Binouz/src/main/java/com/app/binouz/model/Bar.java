@@ -2,16 +2,13 @@
 package com.app.binouz.model;
 
 import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
 
 @Entity
-//@Table(name = "Bar")
 public class Bar implements Serializable {
     
     /*
@@ -49,7 +46,9 @@ public class Bar implements Serializable {
     }
 
 
-
+     /*
+    Invocation des Getters & Setters
+    */
     public String getNom() {
         return nom;
     }

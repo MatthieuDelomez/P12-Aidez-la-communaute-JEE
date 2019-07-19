@@ -3,6 +3,7 @@ package com.app.binouz.validator;
 
 import com.app.binouz.model.AppUser;
 import com.app.binouz.service.UserService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
@@ -44,15 +45,6 @@ public class UserValidator implements Validator{
             errors.rejectValue("password", "Size.appUser.password");
         }
         
-        /*
-
-        if (!user.getPasswordConfirm().equals(user.getPassword())) {
-            errors.rejectValue("passwordConfirm", "Diff.appUser.passwordConfirm");
-        }
-        */
-        
-       System.out.println("=======================>"  +user.getPassword() + " " + user.getUsername() + " " + user.getAdresseMail() + " " + 
-                user.getNom() + " " + user.getPrenom() + " " + user.getRoles()+ "<=======================" );
     
 }
     

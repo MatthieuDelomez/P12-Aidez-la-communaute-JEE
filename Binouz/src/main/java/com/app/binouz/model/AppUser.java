@@ -2,22 +2,14 @@
 package com.app.binouz.model;
 
 import java.io.Serializable;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.List;
+
 import java.util.Set;
-import javax.persistence.CascadeType;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
-import javax.persistence.Transient;
 import javax.persistence.UniqueConstraint;
 
 
@@ -69,6 +61,9 @@ public class AppUser implements Serializable{
     }
  
 
+     /*
+    Invocation des Getters & Setters
+    */
     public String getUsername() {
         return username;
     }
@@ -116,15 +111,6 @@ public class AppUser implements Serializable{
     public void setEnabled(boolean enabled) {
         this.enabled = enabled;
     }
-
-/*
-    public String getPasswordConfirm() {
-        return passwordConfirm;
-    }
-
-    public void setPasswordConfirm(String passwordConfirm) {
-        this.passwordConfirm = passwordConfirm;
-    }*/
 
     public Set<UserRole> getRoles() {
         return roles;

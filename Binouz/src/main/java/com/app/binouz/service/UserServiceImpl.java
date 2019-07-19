@@ -4,16 +4,12 @@ package com.app.binouz.service;
 import com.app.binouz.dao.RoleRepository;
 import com.app.binouz.dao.UserRepository;
 import com.app.binouz.model.AppUser;
-import com.app.binouz.model.UserRole;
+
 import java.util.HashSet;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
-
-
-import org.springframework.security.crypto.password.PasswordEncoder;
-
 
 
 

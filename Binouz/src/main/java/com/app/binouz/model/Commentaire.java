@@ -32,6 +32,7 @@ public class Commentaire implements Serializable {
     
     @Column(name = "description")
     private String description;
+    
 
     /*
     Invocation des Getters & Setters

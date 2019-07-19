@@ -1,13 +1,12 @@
 
 package com.app.binouz.controller;
 
-import com.app.binouz.dao.RoleRepository;
 import com.app.binouz.model.AppUser;
 import com.app.binouz.security.SecurityService;
 import com.app.binouz.service.UserService;
 import com.app.binouz.validator.UserValidator;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -16,7 +15,12 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
 
-
+/*
+Classe controller qui va gérer les méthodes relatives aux Utilisateurs
+Nottament l'enregistrement des users
+*
+@Author: Matthieu Delomez
+*/
 @Controller
 public class UserController {
     
@@ -30,8 +34,6 @@ public class UserController {
     @Autowired
     private UserValidator userValidator;
     
-    @Autowired
-    private RoleRepository roleRepository;
     
     
     @GetMapping("/registration")
@@ -57,7 +59,6 @@ public class UserController {
         
         
         
-   //     roleRepository.findByRole(role);
         userService.save(appUser);
         securityService.autoLogin(appUser.getUsername(), appUser.getPassword());
                 

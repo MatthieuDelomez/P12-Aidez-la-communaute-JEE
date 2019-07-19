@@ -15,7 +15,8 @@ public interface BarRepository extends CrudRepository<Bar, Integer>{
     
     List<Bar> findByNom(String nom);
     
-    
+   
+  //Methode qui va nous permettre du suprimer un bar en fonction de son nom  
   @Transactional
   @Modifying
   @Query(value="delete from Bar c where c.nom = ?1")

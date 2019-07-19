@@ -14,9 +14,13 @@ import org.springframework.transaction.annotation.Transactional;
 @Repository
 public interface CommentaireRepository extends CrudRepository<Commentaire, Integer> {
     
+    
+    // Generer une liste de commentaires
     List<Commentaire> findByUsername(String username);
     
+  
     
+   // Supression du commentaire grace à son Id 
   @Transactional
   @Modifying
   @Query(value="delete from Commentaire c where c.idcom = ?1")

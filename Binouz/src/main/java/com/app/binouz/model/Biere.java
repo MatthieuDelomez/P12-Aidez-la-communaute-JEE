@@ -7,10 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
 
-//@Table(name="Biere")
 @Entity
 public class Biere implements Serializable {
     
@@ -64,7 +62,6 @@ public class Biere implements Serializable {
     /*
     Invocation des Getters & Setters
     */
-
     public int getIdbiere() {
         return idbiere;
     }
@@ -88,8 +85,6 @@ public class Biere implements Serializable {
     public void setNombar(String nombar) {
         this.nombar = nombar;
     }
-
-
 
     public String getVariete() {
         return variete;

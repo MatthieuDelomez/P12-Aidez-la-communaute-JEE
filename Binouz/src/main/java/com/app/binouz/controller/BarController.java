@@ -10,10 +10,13 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 
-
+/*
+Classe controller qui va gérer les méthodes relatives aux Bars
+*
+@Author: Matthieu Delomez
+*/
 @Controller
 public class BarController {
     
@@ -39,7 +42,7 @@ public class BarController {
    
 
     
-        /*
+    /*
     ************************************************************
     PARTIE RESERVE A LA MODERATION DE APPLICATION
     ************************************************************

@@ -13,10 +13,14 @@ import org.springframework.transaction.annotation.Transactional;
 @Repository
 public interface BiereRepository extends CrudRepository<Biere, Integer>{
     
-        @Query("SELECT e FROM Biere e WHERE e.nombiere LIKE %?1")
-        public  List<Biere> findByNombiere(String nombiere);
+    
+  // Methode Query qui va nous permettre de rechercher une biere 
+ // en fonction de son nom
+  @Query("SELECT e FROM Biere e WHERE e.nombiere LIKE %?1")
+  public  List<Biere> findByNombiere(String nombiere);
         
-        
+  
+  // Supression d'une biere en fonction de son nom 
   @Transactional
   @Modifying
   @Query(value="delete from Biere c where c.nombiere = ?1")
