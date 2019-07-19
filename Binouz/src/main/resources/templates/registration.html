@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 
-<html>
-    <head>
-        <title>Enregistrez-vous</title>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Enregistrez-vous</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     
-    
-    
-    
-    <body>
-        
-        <div layout:fragment="content" class="container mySpace">
-            <div class="alert alert-info" th:if="${exist}">
-	<p class="text text-center">
-	  User with this Email already Exist
-	</p>
-	</div>
-            <form th:action="@{/registration}" th:object="${appuser}" method="post">
-                
-                <div class="form-group">
+    <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+
+
+
+
+
+    <div class="container my-5">
+        <h3> Enregistrez-vous</h3>
+        <div class="card">
+            <div class="card-body">
+                <div class="col-md-10">
+                    <form th:action="@{/registration}" th:object="${appuser}" method="post">
+                        <div class="row">
+                            
+                            
+                            <div class="form-group">
                     <label for="adresseMail" class="form-control-label">Email</label>
                     <input type="text" class="form-control" th:field="*{adresseMail}" id="adresseMail" />
                     <div class="text text-danger" th:if="${#fields.hasErrors('adresseMail')}" th:errors="*{adresseMail}"> </div>
@@ -31,18 +46,9 @@
                     <label for="password" class="form-control-label">Password</label>
                     <input type="password" class="form-control" th:field="*{password}" id="password" />
                     <div class="text text-danger" th:if="${#fields.hasErrors('password')}" th:errors="*{password}"> </div>
-
                 </div>
-                <!--
-                 <div class="form-group">
-                    <label for="passwordConfirm" class="form-control-label">PasswordConfirm</label>
-                    <input type="password" class="form-control" th:field="*{passwordConfirm}" id="password" />
-                 <div class="text text-danger" th:if="${#fields.hasErrors('passwordConfirm')}" th:errors="*{passwordConfirm}"> </div>
-
-                </div>
-                -->
-                
-                <div class="form-group">
+                            
+                            <div class="form-group">
                     <label for="username" class="form-control-label">Username</label>
                     <input type="text" class="form-control" th:field="*{username}" id="username" />
                      <div class="text text-danger" th:if="${#fields.hasErrors('username')}" th:errors="*{username}"> </div>
@@ -63,26 +69,30 @@
                 </div>
                 
                 <input type="submit" value="Submit"  class="btn btn-primary"/>
-                
-                
-                
-                
-                
-                
-            </form>
-            
-            
+                            
+
+
+                         <div class="form-group col-md-8"></div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        
-      
-        
-       
-        
-        </body>
-    
-    
-    
-    
-    
-    
+    </div>
+  
+  
+  
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+</body>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js" data-cf-settings="dc05896777a71f9e616b648a-|49" defer=""></script>
 </html>
+
