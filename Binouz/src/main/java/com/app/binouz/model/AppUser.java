@@ -37,8 +37,6 @@ public class AppUser implements Serializable{
    @Column(name = "prenom", length = 30, nullable = false)
     private String prenom;
    
-   @Column(name = "enabled", length = 30, nullable = true)
-   private boolean enabled;
 
    
    @ManyToMany
@@ -51,13 +49,12 @@ public class AppUser implements Serializable{
         super();
     }
 
-    public AppUser(String username, String adresseMail, String password, String nom, String prenom, boolean enabled) {
+    public AppUser(String username, String adresseMail, String password, String nom, String prenom) {
         this.username = username;
         this.adresseMail = adresseMail;
         this.password = password;
         this.nom = nom;
         this.prenom = prenom;
-        this.enabled = enabled;
     }
  
 
@@ -102,14 +99,6 @@ public class AppUser implements Serializable{
 
     public void setPrenom(String prenom) {
         this.prenom = prenom;
-    }
-
-    public boolean isEnabled() {
-        return enabled;
-    }
-
-    public void setEnabled(boolean enabled) {
-        this.enabled = enabled;
     }
 
     public Set<UserRole> getRoles() {

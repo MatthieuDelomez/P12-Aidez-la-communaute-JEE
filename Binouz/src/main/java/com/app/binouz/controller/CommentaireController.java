@@ -2,9 +2,14 @@
 package com.app.binouz.controller;
 
 import com.app.binouz.dao.CommentaireRepository;
+import com.app.binouz.dao.RoleRepository;
+import com.app.binouz.model.AppUser;
 import com.app.binouz.model.Commentaire;
+
 import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -22,6 +27,8 @@ public class CommentaireController {
     
     
     private final CommentaireRepository commentaireRepository;
+    
+    private RoleRepository roleRepository;
 
     @Autowired
     public CommentaireController(CommentaireRepository commentaireRepository) {
@@ -69,7 +76,8 @@ public class CommentaireController {
     ************************************************************
     */
     @GetMapping("/deleteCom")
-    public String deleteCommentaireGet(Model model){
+    @Secured("ROLE_ADMIN")
+    public String deleteCommentaireGet(Model model, AppUser user){
         model.addAttribute("commentaire", new Commentaire());
         
         
@@ -84,6 +92,7 @@ public class CommentaireController {
     public String deleteBiereGet(@Valid Commentaire commentaire, BindingResult result,Model model, Integer idcom){
         
 
+        
         commentaireRepository.deleteById(idcom);
         
         System.out.println("=======================>" +idcom + "<=============================");

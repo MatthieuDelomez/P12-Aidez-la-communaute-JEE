@@ -34,7 +34,6 @@ public class UserRole implements Serializable{
                        
                        @ManyToMany  @JoinTable (name= "app_user_roles", joinColumns = @JoinColumn 
                        (name = "roles_userroleid"), inverseJoinColumns = @JoinColumn(name = "app_user_username"))
-                       
                         private Set<AppUser> users;
                        
                        

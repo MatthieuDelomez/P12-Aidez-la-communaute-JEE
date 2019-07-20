@@ -5,6 +5,7 @@ import com.app.binouz.dao.BarRepository;
 import com.app.binouz.model.Bar;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -37,43 +38,7 @@ public class BarController {
     }
 
 
-
-    
-   
-
-    
-    /*
-    ************************************************************
-    PARTIE RESERVE A LA MODERATION DE APPLICATION
-    ************************************************************
-    */
-    @GetMapping("/deleteBar")
-    public String deleteBarGet(Model model){
-        model.addAttribute("bar", new Bar());
-        
-        
-        return "deleteBar";
-        
-    }
-    
-    
-    
-    @PostMapping("/deleteBar")
-    public String deleteBiereGet(@Valid Bar bar, BindingResult result,Model model, String nom){
-        
-
-        barRepository.deleteByNom(nom);
-        
-        System.out.println("=======================>" +nom + "<=============================");
-        
-        
-        return "index";
-        
-        
-         }
-
-    
-    @GetMapping("/addBar")
+     @GetMapping("/addBar")
     public String addBarGet(Model model){
         model.addAttribute("bar", new Bar());
         
@@ -92,5 +57,41 @@ public class BarController {
         barRepository.save(bar);
         return "/index";
     }
+    
+   
+
+    
+    /*
+    ************************************************************
+    PARTIE RESERVE A LA MODERATION DE APPLICATION
+    ************************************************************
+    */
+    @Secured("ROLE_ADMIN")
+    @GetMapping("/deleteBar")
+    public String deleteBarGet(Model model){
+        model.addAttribute("bar", new Bar());
+        
+        
+        return "deleteBar";
+        
+    }
+    
+    
+    @PostMapping("/deleteBar")
+    public String deleteBiereGet(@Valid Bar bar, BindingResult result,Model model, String nom){
+        
+
+        barRepository.deleteByNom(nom);
+        
+        System.out.println("=======================>" +nom + "<=============================");
+        
+        
+        return "index";
+        
+        
+         }
+
+    
+    
 
 }

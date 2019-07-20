@@ -19,24 +19,12 @@ Classe controller qui va gérer les méthodes relatives aux differentes pages
 @Controller
 public class PagesController {
     
+    
+    
     @GetMapping("/index")
     public String home() {
         return "index";
     }
-    
-    
-    @GetMapping("/admin")
-    public String admin() {
-        return "/admin";
-    }
-
-    
-    @GetMapping("/about")
-    public String about() {
-        return "/about";
-    }
-    
-    
     
     @GetMapping("/login")
     public String login(Model model) {

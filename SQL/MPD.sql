@@ -1,25 +1,25 @@
 
-CREATE SEQUENCE public.user_roles_id_seq;
-
-CREATE TABLE public.utilisateur_roles (
-                userRoleId BIGINT NOT NULL DEFAULT nextval('public.user_roles_id_seq'),
-                rolename VARCHAR(45) NOT NULL,
-                CONSTRAINT utilisateur_roles_pk PRIMARY KEY (userRoleId)
-);
-
-
-ALTER SEQUENCE public.user_roles_id_seq OWNED BY public.utilisateur_roles.userRoleId;
-
 CREATE TABLE public.App_User (
                 username VARCHAR(36) NOT NULL,
                 adresse_mail VARCHAR(120) NOT NULL,
                 password VARCHAR(128) NOT NULL,
                 nom VARCHAR(30) NOT NULL,
                 prenom VARCHAR(30) NOT NULL,
-                enabled BOOLEAN NOT NULL,
                 CONSTRAINT app_user_pk PRIMARY KEY (username)
 );
 
+
+CREATE SEQUENCE public.user_roles_id_seq;
+
+CREATE TABLE public.utilisateur_roles (
+                userRoleId BIGINT NOT NULL DEFAULT nextval('public.user_roles_id_seq'),
+                rolename VARCHAR(45) NOT NULL,
+                username VARCHAR(36) NOT NULL,
+                CONSTRAINT utilisateur_roles_pk PRIMARY KEY (userRoleId)
+);
+
+
+ALTER SEQUENCE public.user_roles_id_seq OWNED BY public.utilisateur_roles.userRoleId;
 
 CREATE TABLE public.Bar (
                 nom VARCHAR(90) NOT NULL,
@@ -61,6 +61,13 @@ CREATE TABLE public.Biere (
 ALTER SEQUENCE public.biere_idbiere_seq OWNED BY public.Biere.idBiere;
 
 ALTER TABLE public.Commentaire ADD CONSTRAINT app_user_commentaire_fk
+FOREIGN KEY (username)
+REFERENCES public.App_User (username)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE;
+
+ALTER TABLE public.utilisateur_roles ADD CONSTRAINT app_user_utilisateur_roles_fk
 FOREIGN KEY (username)
 REFERENCES public.App_User (username)
 ON DELETE NO ACTION

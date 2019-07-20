@@ -17,7 +17,7 @@ public class Biere implements Serializable {
     */
     @Id
     @Column(name = "idbiere")
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idbiere;
     
     @Column(name = "nombiere")

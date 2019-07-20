@@ -1,7 +1,9 @@
 ﻿INSERT INTO public.utilisateur_roles(
-rolename
+rolename,
+username
 )
 
 VALUES(
-'ROLE_USER'
+'ROLE_ADMIN',
+'admin01'
 );
