@@ -53,6 +53,10 @@
       </li>
       </ul>
   </nav>
+  
+  
+  
+  
         
           <div class="container my-5">
         <h3> Cherchez votre Beer favorite</h3>
@@ -69,44 +73,48 @@
  <div class="form-group col-md-8">
     <label for="nombiere">Search:</label> <input name="nombiere">
     </input>
+    
+    
  </div>
-    
+    </div>
+        </div>
+             </div>
+                 </div>
+                      </div>
+        
+        
     <br>
     <br>
     <br>
     
-     <div class="form-group col-md-8">
+     <div class="container my-5">
+        <h3> Ici le résultat de votre recherche</h3>
+        <div class="card">
+            <div class="card-body">
+                <div class="col-md-10">
     <table>
     <thead>
-        <tr>
-            <th> || Nom de la Bière ||</th>
-            <th>||  Nom du Bar ||</th>
-            <th> || Variete ||</th>
-            <th> || Region ||</th>
-            <th> || Degres ||</th>
-        </tr>
-    </thead>
-
-    
-    <tbody>
+   <tbody>
     <tr th:if="${nombieres.empty}">
             <td colspan="5"> No Beer Available </td>
         </tr>
-    <br>
-        <tr th:each="nombiere : ${nombieres}">
-            <td><span th:text="${nombiere.nombiere}"> Nom de la Bière </span></td>
-            <br>
-            <td><span th:text="${nombiere.nombar}"> Nom du Bar </span></td>
-            <br>
-            <td><span th:text="${nombiere.variete}"> Variete </span></td>
-            <td><span th:text="${nombiere.region}"> Region </span></td>
-            <td><span th:text="${nombiere.degres}"> Degres </span></td>
-        </tr>
+        <ul th:each="nombiere : ${nombieres}">
+            <li><span th:text="${nombiere.nombiere}"> Nom de la Bière </span></li>
+            <li><span th:text="${nombiere.nombar}"> Nom du Bar </span></li>
+            <li><span th:text="${nombiere.variete}"> Variete </span></li>
+            <li><span th:text="${nombiere.region}"> Region </span></li>
+            <li><span th:text="${nombiere.degres}"> Degres </span></li>
+        </ul>
+    
+    
+    
     </tbody>
-</table>
-     </div>
-
-    </div>
+    </thead>
+   </table>
+                    
+                    
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
