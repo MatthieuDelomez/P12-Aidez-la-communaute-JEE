@@ -67,23 +67,22 @@
     User:
     username - user01
     password - user
-    
+
     
 ### Déploiement
     
-   . Téléchargez ou clonez le projet via Github
-   . Décompréssez votre fichier .zip que vous venez de télécharger
-   . Ouvrez le dossier "SQL"
-   . Téléchargez PGAdmin III et créez une nouvelle base de données qui se nomme "AppBin'z"
-   . Exécutez le script "MDP" dans l'onglet Sql
-   . Ouvrez le dossier "Script" et exécutez les scripts Sql dans l'ordre de la numérotation
-   . Importez le module "Binouz" dans l'environnement de développement de votre choix
-   . Lancez l'application 
-   . Connectez-vous via un navigateur sur l'adresse suivante "localhost:8090"
-   . Enjoy (:
+    . Téléchargez ou clonez le projet via Github
+    . Décompréssez votre fichier .zip que vous venez de télécharger
+    . Ouvrez le dossier "SQL"
+    . Téléchargez PGAdmin III et créez une nouvelle base de données qui se nomme "AppBin'z"
+    . Exécutez le script "MDP" dans l'onglet Sql
+    . Ouvrez le dossier "Script" et exécutez les scripts Sql dans l'ordre de la numérotation
+    . Importez le module "Binouz" dans l'environnement de développement de votre choix
+    . Lancez l'application 
+    . Connectez-vous via un navigateur sur l'adresse suivante "localhost:8090"
+    . Enjoy (:
     
     
-
 
 # Contact
  <ul>
