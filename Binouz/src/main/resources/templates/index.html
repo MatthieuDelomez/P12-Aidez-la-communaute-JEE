@@ -64,11 +64,14 @@
       </li>
       <br>
       <br>
+     
       <li class="sidebar-nav-item">
-        <form th:action="@{/logout}" method="post">
-              <input type="submit" value="Sign Out"/>
-        </form>
-      </li>
+      <div class="js-scroll-trigger">
+      <form th:action="@{/logout}" method="post">
+      <input  type="submit" value="Sign Out"  class="btn btn-primary"/>
+     </div>
+     </form>
+     </li>
       
 
 

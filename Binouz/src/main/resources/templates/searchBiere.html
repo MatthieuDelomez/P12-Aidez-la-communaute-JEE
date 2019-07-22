@@ -37,7 +37,12 @@
       </li>
       <br>
       <br>
-      
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="/searchBiere">Consultez nos Bieres</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="/listBar">Consultez nos Bars</a>
+      </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="/addBar">Ajoutez un Bar</a>
       </li>
@@ -47,10 +52,12 @@
       <br>
       <br>
       <li class="sidebar-nav-item">
-        <form th:action="@{/logout}" method="post">
-              <input type="submit" value="Sign Out"/>
-        </form>
-      </li>
+      <div class="js-scroll-trigger">
+      <form th:action="@{/logout}" method="post">
+      <input  type="submit" value="Sign Out"  class="btn btn-primary"/>
+     </div>
+     </form>
+     </li>
       </ul>
   </nav>
   

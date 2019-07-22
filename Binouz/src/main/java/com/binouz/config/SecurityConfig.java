@@ -74,7 +74,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         
         
         http.authorizeRequests()
-                    .antMatchers("/registration", "/css/**", "/js/**", "/vendor/**").permitAll();
+                    .antMatchers("/registration", "/css/**", "/js/**", "/vendor/**")
+                    .permitAll();
         
 
                 
@@ -95,6 +96,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     
                     .defaultSuccessUrl("/index")
                     .failureUrl("/403");
+            
     }
 
     @Bean

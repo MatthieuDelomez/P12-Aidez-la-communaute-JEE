@@ -23,7 +23,7 @@
 
 <body id="page-top">
 
-  <!-- Navigation -->
+   <!-- Navigation -->
   <a class="menu-toggle rounded" href="#">
     <i class="fas fa-bars"></i>
   </a>
@@ -37,7 +37,12 @@
       </li>
       <br>
       <br>
-      
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="/searchBiere">Cherchez une Biere</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="/listCom">Consultez nos Com's</a>
+      </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="/addBar">Ajoutez un Bar</a>
       </li>
@@ -47,10 +52,12 @@
       <br>
       <br>
       <li class="sidebar-nav-item">
-        <form th:action="@{/logout}" method="post">
-              <input type="submit" value="Sign Out"/>
-        </form>
-      </li>
+      <div class="js-scroll-trigger">
+      <form th:action="@{/logout}" method="post">
+      <input  type="submit" value="Sign Out"  class="btn btn-primary"/>
+     </div>
+     </form>
+     </li>
       </ul>
   </nav>
     

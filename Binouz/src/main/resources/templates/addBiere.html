@@ -37,22 +37,30 @@
       </li>
       <br>
       <br>
-      
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="/listBar">Consultez nos Bars</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="/listCom">Consultez nos Com's</a>
+      </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="/addBar">Ajoutez un Bar</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="/addBiere">Ajoutez une Biere</a>
+        <a class="js-scroll-trigger" href="/addCommentaire">Ajoutez un Commentaire</a>
       </li>
       <br>
       <br>
       <li class="sidebar-nav-item">
-        <form th:action="@{/logout}" method="post">
-              <input type="submit" value="Sign Out"/>
-        </form>
-      </li>
+      <div class="js-scroll-trigger">
+      <form th:action="@{/logout}" method="post">
+      <input  type="submit" value="Sign Out"  class="btn btn-primary"/>
+     </div>
+     </form>
+     </li>
       </ul>
   </nav>
+
 
 
 
@@ -61,7 +69,7 @@
         <div class="card">
             <div class="card-body">
                 <div class="col-md-10">
-                    <form action="#" th:action="@{/addBiere}" th:object="${biere}" method="get">
+                    <form action="#" th:action="@{/addBiere}" th:object="${biere}" method="post">
                         <div class="row">
                             
                             

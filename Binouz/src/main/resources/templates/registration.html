@@ -21,58 +21,37 @@
   <link href="css/stylish-portfolio.min.css" rel="stylesheet">
 </head>
 
-<body id="page-top">
 
-
-
-
-
-    <div class="container my-5">
+ <div class="container my-5">
         <h3> Enregistrez-vous</h3>
         <div class="card">
             <div class="card-body">
                 <div class="col-md-10">
-                    <form th:action="@{/registration}" th:object="${appuser}" method="post">
+                    <form action="#" th:action="@{/registration}" th:object="${appuser}" method="post">
                         <div class="row">
                             
                             
-                            <div class="form-group">
-                    <label for="adresseMail" class="form-control-label">Email</label>
-                    <input type="text" class="form-control" th:field="*{adresseMail}" id="adresseMail" />
-                    <div class="text text-danger" th:if="${#fields.hasErrors('adresseMail')}" th:errors="*{adresseMail}"> </div>
-                </div>
-                
-                <div class="form-group">
-                    <label for="password" class="form-control-label">Password</label>
-                    <input type="password" class="form-control" th:field="*{password}" id="password" />
-                    <div class="text text-danger" th:if="${#fields.hasErrors('password')}" th:errors="*{password}"> </div>
-                </div>
-                            
-                            <div class="form-group">
-                    <label for="username" class="form-control-label">Username</label>
-                    <input type="text" class="form-control" th:field="*{username}" id="username" />
-                     <div class="text text-danger" th:if="${#fields.hasErrors('username')}" th:errors="*{username}"> </div>
-
-                </div>
-                
-                <div class="form-group">
-                    <label for="nom" class="form-control-label">Nom</label>
-                    <input type="text" class="form-control" th:field="*{nom}" id="nom" />
-                    <div class="text text-danger" th:if="${#fields.hasErrors('nom')}" th:errors="*{nom}"> </div>
-                </div>
-                
-                
-                <div class="form-group">
-                    <label for="prenom" class="form-control-label">Prenom</label>
-                    <input type="text" class="form-control" th:field="*{prenom}" id="prenom" />
-                    <div class="text text-danger" th:if="${#fields.hasErrors('prenom')}" th:errors="*{prenom}"> </div>
-                </div>
-                
-                <input type="submit" value="Submit"  class="btn btn-primary"/>
-                            
+                            <div class="form-group col-md-8">
+                                <label for="adresseMail" class="col-form-label">Adresse mail</label> <input type="text" th:field="*{adresseMail}" class="form-control" id="adresseMail" placeholder="Adresse Mail"> <span th:if="${#fields.hasErrors('adresseMail')}" th:errors="*{adresseMail}" class="text-danger"></span>
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label for="password" class="col-form-label">Mot de Passe</label> <input type="password" th:field="*{password}" class="form-control" id="password" placeholder="Mot de Passe"> <span th:if="${#fields.hasErrors('password')}" th:errors="*{password}" class="text-danger"></span>
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label for="username" class="col-form-label">Pseudo</label> <input type="text" th:field="*{username}" class="form-control" id="username" placeholder="Pseudo"> <span th:if="${#fields.hasErrors('username')}" th:errors="*{username}" class="text-danger"></span>
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label for="nom" class="col-form-label">Nom</label> <input type="text" th:field="*{nom}" class="form-control" id="nom" placeholder="Nom"> <span th:if="${#fields.hasErrors('nom')}" th:errors="*{nom}" class="text-danger"></span>
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label for="prenom" class="col-form-label">Prenom</label> <input type="text" th:field="*{prenom}" class="form-control" id="prenom" placeholder="Prenom"> <span th:if="${#fields.hasErrors('prenom')}" th:errors="*{prenom}" class="text-danger"></span>
+                            </div>
 
 
-                         <div class="form-group col-md-8"></div>
+                            <div class="col-md-6">
+                                <input type="submit" value="Submit"  class="btn btn-primary"/>
+                            </div>
+
 
                         </div>
                     </form>
@@ -80,8 +59,7 @@
             </div>
         </div>
     </div>
-  
-  
+
   
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
