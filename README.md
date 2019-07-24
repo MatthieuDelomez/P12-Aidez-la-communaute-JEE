@@ -9,7 +9,7 @@
 
     Biere Lab': 
     
-    Dans une envie d'aider l'utilisateur à découvrir la zithologie, l'art de la dégustation brasicole nous mettons à disposition une application ergonomique et sécurisé proposant un référencement de biere locale disponible dans les bars avoisinants. 
+    Dans une envie d'aider l'utilisateur à découvrir la zithologie, l'art de la dégustation brasicole nous mettons à disposition une application ergonomique et sécurisée proposant un référencement de biere locale disponible dans les bars avoisinants. 
 
 # Technologies
     
