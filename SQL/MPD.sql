@@ -1,4 +1,15 @@
 
+CREATE SEQUENCE public.user_roles_id_seq;
+
+CREATE TABLE public.utilisateur_roles (
+                userRoleId BIGINT NOT NULL DEFAULT nextval('public.user_roles_id_seq'),
+                rolename VARCHAR(45) NOT NULL,
+                CONSTRAINT utilisateur_roles_pk PRIMARY KEY (userRoleId)
+);
+
+
+ALTER SEQUENCE public.user_roles_id_seq OWNED BY public.utilisateur_roles.userRoleId;
+
 CREATE TABLE public.App_User (
                 username VARCHAR(36) NOT NULL,
                 adresse_mail VARCHAR(120) NOT NULL,
@@ -9,17 +20,17 @@ CREATE TABLE public.App_User (
 );
 
 
-CREATE SEQUENCE public.user_roles_id_seq;
+CREATE SEQUENCE public.app_user_roles_idref_seq;
 
-CREATE TABLE public.utilisateur_roles (
-                userRoleId BIGINT NOT NULL DEFAULT nextval('public.user_roles_id_seq'),
-                rolename VARCHAR(45) NOT NULL,
-                username VARCHAR(36) NOT NULL,
-                CONSTRAINT utilisateur_roles_pk PRIMARY KEY (userRoleId)
+CREATE TABLE public.app_user_roles (
+                idRef BIGINT NOT NULL DEFAULT nextval('public.app_user_roles_idref_seq'),
+                roles_userroleid BIGINT NOT NULL,
+                app_user_username VARCHAR(36) NOT NULL,
+                CONSTRAINT app_user_roles_pk PRIMARY KEY (idRef)
 );
 
 
-ALTER SEQUENCE public.user_roles_id_seq OWNED BY public.utilisateur_roles.userRoleId;
+ALTER SEQUENCE public.app_user_roles_idref_seq OWNED BY public.app_user_roles.idRef;
 
 CREATE TABLE public.Bar (
                 nom VARCHAR(90) NOT NULL,
@@ -60,6 +71,13 @@ CREATE TABLE public.Biere (
 
 ALTER SEQUENCE public.biere_idbiere_seq OWNED BY public.Biere.idBiere;
 
+ALTER TABLE public.app_user_roles ADD CONSTRAINT utilisateur_roles_app_user_roles_fk
+FOREIGN KEY (roles_userroleid)
+REFERENCES public.utilisateur_roles (userRoleId)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+NOT DEFERRABLE;
+
 ALTER TABLE public.Commentaire ADD CONSTRAINT app_user_commentaire_fk
 FOREIGN KEY (username)
 REFERENCES public.App_User (username)
@@ -67,8 +85,8 @@ ON DELETE NO ACTION
 ON UPDATE NO ACTION
 NOT DEFERRABLE;
 
-ALTER TABLE public.utilisateur_roles ADD CONSTRAINT app_user_utilisateur_roles_fk
-FOREIGN KEY (username)
+ALTER TABLE public.app_user_roles ADD CONSTRAINT app_user_app_user_roles_fk
+FOREIGN KEY (app_user_username)
 REFERENCES public.App_User (username)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION

@@ -22,7 +22,7 @@ import javax.persistence.Table;
 public class UserRole implements Serializable{
     
                      @Id
-                     @GeneratedValue(strategy = GenerationType.AUTO)
+                     @GeneratedValue(strategy = GenerationType.IDENTITY)
                       @Column(name = "userroleid", nullable = false)
                       private Long userRoleId;
                      
@@ -32,7 +32,7 @@ public class UserRole implements Serializable{
                        
 
                        
-                       @ManyToMany  @JoinTable (name= "app_user_roles", joinColumns = @JoinColumn 
+                       @ManyToMany @JoinTable (name= "app_user_roles", joinColumns = @JoinColumn 
                        (name = "roles_userroleid"), inverseJoinColumns = @JoinColumn(name = "app_user_username"))
                         private Set<AppUser> users;
                        

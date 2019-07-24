@@ -39,7 +39,7 @@ public class AppUser implements Serializable{
    
 
    
-   @ManyToMany
+  @ManyToMany
    private Set<UserRole> roles;
    
    
