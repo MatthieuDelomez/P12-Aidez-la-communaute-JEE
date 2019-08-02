@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 
 @Repository
-public interface BiereRepository extends CrudRepository<Biere, Integer>{
+public interface BiereRepository extends CrudRepository<Biere, Long>{
     
     
   // Methode Query qui va nous permettre de rechercher une biere 
@@ -23,8 +23,8 @@ public interface BiereRepository extends CrudRepository<Biere, Integer>{
   // Supression d'une biere en fonction de son nom 
   @Transactional
   @Modifying
-  @Query(value="delete from Biere c where c.nombiere = ?1")
-  void deleteByNombiere(String nombiere );
+  @Query(value="delete from Biere c where c.idbiere = ?1")
+  void deleteByNombiere(Long idbiere );
   
         
         

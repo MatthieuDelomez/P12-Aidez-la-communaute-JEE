@@ -89,7 +89,7 @@ public class CommentaireController {
     
     
     @PostMapping("/deleteCom")
-    public String deleteBiereGet(@Valid Commentaire commentaire, BindingResult result,Model model, Integer idcom){
+    public String deleteBiereGet(@Valid Commentaire commentaire, BindingResult result,Model model, Long idcom){
         
 
         

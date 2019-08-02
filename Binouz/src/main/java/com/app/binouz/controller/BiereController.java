@@ -2,6 +2,7 @@
 package com.app.binouz.controller;
 
 import com.app.binouz.dao.BiereRepository;
+import com.app.binouz.model.AppUser;
 import com.app.binouz.model.Biere;
 
 import java.util.List;
@@ -91,17 +92,31 @@ public class BiereController {
     PARTIE RESERVE A LA MODERATION DE APPLICATION
     ************************************************************
     */
+    
     @GetMapping("/deleteBiere")
     @Secured("ROLE_ADMIN")
-    public String deleteBiereGet(@Valid Biere biere, BindingResult result,Model model, String nombiere){
-        
-
-        biereRepository.deleteByNombiere(nombiere);
-        
-        System.out.println("=======================>" +nombiere + "<=============================");
+    public String deleteBiereGet(Model model, AppUser user){
+        model.addAttribute("biere", new Biere());
         
         
         return "deleteBiere";
+        
+    }
+    
+    
+    
+    
+    @PostMapping("/deleteBiere")
+    public String deleteBiereGeet(@Valid Biere biere, BindingResult result,Model model, Long idbiere){
+        
+
+        
+        biereRepository.deleteById(idbiere);
+        
+        System.out.println("=======================>" +idbiere + "<=============================");
+        
+        
+        return "index";
         
         
 

@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 
 @Repository
-public interface CommentaireRepository extends CrudRepository<Commentaire, Integer> {
+public interface CommentaireRepository extends CrudRepository<Commentaire, Long> {
     
     
     // Generer une liste de commentaires
@@ -24,6 +24,6 @@ public interface CommentaireRepository extends CrudRepository<Commentaire, Integ
   @Transactional
   @Modifying
   @Query(value="delete from Commentaire c where c.idcom = ?1")
-  void deleteById(Integer idcom );
+  void deleteById(Long idcom );
     
 }

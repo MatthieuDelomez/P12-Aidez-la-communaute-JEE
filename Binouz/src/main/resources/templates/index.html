@@ -27,6 +27,7 @@
 
 </head>
 
+
 <body id="page-top">
 
   <!-- Navigation -->
@@ -62,6 +63,18 @@
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="/addBiere">Ajoutez une Biere</a>
       </li>
+      <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" sec:authorize="hasRole('ROLE_ADMIN')" href="/deleteCom">Supprimez un Commentaire</a>
+      </li>
+     <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" sec:authorize="hasRole('ROLE_ADMIN')" href="/deleteBar">Supprimez un Bar</a>
+      </li>
+      <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" sec:authorize="hasRole('ROLE_ADMIN')" href="/deleteBiere">Supprimez une Biere</a>
+      </li>
+    
+     
+      
       <br>
       <br>
      

@@ -13,9 +13,9 @@
 <body>
 
             
- <h2>Rentrez le nom de la biere que vous voulez supprimer!</h2>
-    <form action="#" th:action="@{/deleteBiere}" method="get">
-    <label for="nombiere">Search:</label> <input name="nombiere">
+ <h2>Supprimer une Biere! [ID requis]</h2>
+    <form action="#" th:action="@{/deleteBiere}" method="post">
+    <label for="idbiere">Search:</label> <input name="idbiere">
     </input>
     
     
