@@ -19,7 +19,7 @@ public class Commentaire implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idcom")
-    private int idcom;
+    private Long idcom;
     
     @Column(name = "username")
     private String username;
@@ -37,11 +37,11 @@ public class Commentaire implements Serializable {
     /*
     Invocation des Getters & Setters
     */
-    public int getIdcom() {
+    public Long getIdcom() {
         return idcom;
     }
 
-    public void setIdCom(int idcom) {
+    public void setIdCom(Long idcom) {
         this.idcom = idcom;
     }
 

@@ -2,7 +2,7 @@
 CREATE SEQUENCE public.user_roles_id_seq;
 
 CREATE TABLE public.utilisateur_roles (
-                userRoleId BIGINT NOT NULL DEFAULT nextval('public.user_roles_id_seq'),
+                userRoleId INTEGER NOT NULL DEFAULT nextval('public.user_roles_id_seq'),
                 rolename VARCHAR(45) NOT NULL,
                 CONSTRAINT utilisateur_roles_pk PRIMARY KEY (userRoleId)
 );
@@ -24,7 +24,7 @@ CREATE SEQUENCE public.app_user_roles_idref_seq;
 
 CREATE TABLE public.app_user_roles (
                 idRef BIGINT NOT NULL DEFAULT nextval('public.app_user_roles_idref_seq'),
-                roles_userroleid BIGINT NOT NULL,
+                roles_userroleid INTEGER NOT NULL,
                 app_user_username VARCHAR(36) NOT NULL,
                 CONSTRAINT app_user_roles_pk PRIMARY KEY (idRef)
 );
@@ -45,7 +45,7 @@ CREATE TABLE public.Bar (
 CREATE SEQUENCE public.commentaire_idcom_seq;
 
 CREATE TABLE public.Commentaire (
-                idCom INTEGER NOT NULL DEFAULT nextval('public.commentaire_idcom_seq'),
+                idCom BIGINT NOT NULL DEFAULT nextval('public.commentaire_idcom_seq'),
                 username VARCHAR(36) NOT NULL,
                 titre VARCHAR(50) NOT NULL,
                 nombar VARCHAR(90) NOT NULL,
@@ -59,7 +59,7 @@ ALTER SEQUENCE public.commentaire_idcom_seq OWNED BY public.Commentaire.idCom;
 CREATE SEQUENCE public.biere_idbiere_seq;
 
 CREATE TABLE public.Biere (
-                idBiere INTEGER NOT NULL DEFAULT nextval('public.biere_idbiere_seq'),
+                idBiere BIGINT NOT NULL DEFAULT nextval('public.biere_idbiere_seq'),
                 nombiere VARCHAR(90) NOT NULL,
                 nombar VARCHAR(90) NOT NULL,
                 variete VARCHAR(255) NOT NULL,

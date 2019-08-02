@@ -18,7 +18,7 @@ public class Biere implements Serializable {
     @Id
     @Column(name = "idbiere")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idbiere;
+    private Long idbiere;
     
     @Column(name = "nombiere")
     private String nombiere;
@@ -62,11 +62,11 @@ public class Biere implements Serializable {
     /*
     Invocation des Getters & Setters
     */
-    public int getIdbiere() {
+    public Long getIdbiere() {
         return idbiere;
     }
 
-    public void setIdbiere(int idbiere) {
+    public void setIdbiere(Long idbiere) {
         this.idbiere = idbiere;
     }
 
