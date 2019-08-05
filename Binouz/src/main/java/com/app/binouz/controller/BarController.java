@@ -5,12 +5,14 @@ import com.app.binouz.dao.BarRepository;
 import com.app.binouz.model.Bar;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 
 /*
@@ -30,12 +32,15 @@ public class BarController {
         this.barRepository = barRepository;
     }
     
-    
     @GetMapping("listBar")
-    public String showUpdateForm(Model model) {
-        model.addAttribute("bars", barRepository.findAll());
-        return "listBar";
-    }
+  public String showBar(Model model, @RequestParam(defaultValue = "0") int page){
+      model.addAttribute("barData", barRepository.findAll(new PageRequest(page, 4)));
+      
+      model.addAttribute("currentPage", page);
+      
+      return "listBar";
+  }
+    
 
 
      @GetMapping("/addBar")

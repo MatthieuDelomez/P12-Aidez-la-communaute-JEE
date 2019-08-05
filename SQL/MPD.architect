@@ -173,16 +173,16 @@
    </folder>
   </table>
   <relationships>
-   <relationship id="REL45" populated="true" UUID="3de7c055-711c-49d4-bf73-14779b541339" deferrability="7" deleteRule="3" fk-table-ref="TAB9" fkCardinality="7" identifying="false" name="Bar_Biere_fk" physicalName="Bar_Biere_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+   <relationship id="REL45" populated="true" UUID="3de7c055-711c-49d4-bf73-14779b541339" deferrability="7" deleteRule="3" fk-table-ref="TAB9" fkCardinality="7" identifying="false" name="Bar_Biere_fk" physicalName="bar_biere_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP46" populated="true" UUID="38aef335-991c-4c67-a51d-dbd52e9e5064" fk-column-ref="COL12" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
    </relationship>
-   <relationship id="REL47" populated="true" UUID="6757d958-f971-4086-9864-0a05b469bd19" deferrability="7" deleteRule="3" fk-table-ref="TAB18" fkCardinality="7" identifying="false" name="Bar_Commentaire_fk" physicalName="Bar_Commentaire_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+   <relationship id="REL47" populated="true" UUID="6757d958-f971-4086-9864-0a05b469bd19" deferrability="7" deleteRule="3" fk-table-ref="TAB18" fkCardinality="7" identifying="false" name="Bar_Commentaire_fk" physicalName="bar_commentaire_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP48" populated="true" UUID="a3e384ba-ee5d-4463-968b-68cc5a17536a" fk-column-ref="COL22" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
    </relationship>
-   <relationship id="REL49" populated="true" UUID="9543255c-d049-4091-a2ba-7487af9e936d" deferrability="7" deleteRule="3" fk-table-ref="TAB18" fkCardinality="7" identifying="false" name="App_User_Commentaire_fk" physicalName="App_User_Commentaire_fk" pk-table-ref="TAB26" pkCardinality="2" updateRule="3" >
+   <relationship id="REL49" populated="true" UUID="9543255c-d049-4091-a2ba-7487af9e936d" deferrability="7" deleteRule="3" fk-table-ref="TAB18" fkCardinality="7" identifying="false" name="App_User_Commentaire_fk" physicalName="app_user_commentaire_fk" pk-table-ref="TAB26" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP50" populated="true" UUID="073c075a-f0b3-482f-9880-a1abc5535a05" fk-column-ref="COL20" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL27" />
    </relationship>
-   <relationship id="REL51" populated="true" UUID="5aeeffcb-f2a0-4818-aebc-a6c5bc9f8aa5" deferrability="7" deleteRule="3" fk-table-ref="TAB39" fkCardinality="7" identifying="false" name="App_User_app_user_roles_fk" physicalName="App_User_app_user_roles_fk" pk-table-ref="TAB26" pkCardinality="2" updateRule="3" >
+   <relationship id="REL51" populated="true" UUID="5aeeffcb-f2a0-4818-aebc-a6c5bc9f8aa5" deferrability="7" deleteRule="3" fk-table-ref="TAB39" fkCardinality="7" identifying="false" name="App_User_app_user_roles_fk" physicalName="app_user_app_user_roles_fk" pk-table-ref="TAB26" pkCardinality="2" updateRule="3" >
     <column-mapping id="CMP52" populated="true" UUID="21cb841a-b114-4650-9752-8d57556c2e9f" fk-column-ref="COL42" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL27" />
    </relationship>
    <relationship id="REL53" populated="true" UUID="a5c9a635-c10d-47d6-a555-84d8913d5b0d" deferrability="7" deleteRule="3" fk-table-ref="TAB39" fkCardinality="7" identifying="false" name="utilisateur_roles_app_user_roles_fk" physicalName="utilisateur_roles_app_user_roles_fk" pk-table-ref="TAB34" pkCardinality="2" updateRule="3" >
@@ -190,16 +190,16 @@
    </relationship>
   </relationships>
  </target-database>
- <ddl-generator type="ca.sqlpower.architect.ddl.PostgresDDLGenerator" allow-connection="true" target-schema="public"> </ddl-generator>
+ <ddl-generator type="ca.sqlpower.architect.ddl.PostgresDDLGenerator" allow-connection="false" target-schema="public"> </ddl-generator>
  <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
  <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
-  <table-pane table-ref="TAB1" x="90" y="634" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB9" x="631" y="629" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB18" x="377" y="403" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB26" x="699" y="68" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB34" x="266" y="35" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB39" x="156" y="223" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB1" x="303" y="654" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB9" x="793" y="648" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB18" x="563" y="434" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB26" x="912" y="88" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB34" x="479" y="55" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB39" x="362" y="217" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-link relationship-ref="REL45" pkConnection="0.5275590551181102" fkConnection="0.4645669291338583" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
   <table-link relationship-ref="REL47" pkConnection="0.7792207792207793" fkConnection="0.277992277992278" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
   <table-link relationship-ref="REL49" pkConnection="0.17374517374517376" fkConnection="0.7837837837837838" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
