@@ -9,12 +9,18 @@ import java.util.List;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.SortDefault;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 
 
@@ -29,6 +35,7 @@ public class BiereController {
     
     @Autowired
     private  BiereRepository biereRepository;
+    
 
     @Autowired
     public BiereController(BiereRepository biereRepository) {
@@ -56,13 +63,16 @@ public class BiereController {
         return "/index";
     }
     
+  
+  @GetMapping("listBiere")
+  public String showPage(Model model, @RequestParam(defaultValue = "0") int page){
+      model.addAttribute("data", biereRepository.findAll(new PageRequest(page, 4)));
+      
+      model.addAttribute("currentPage", page);
+      
+      return "listBiere";
+  }
     
-    
-    @GetMapping("listBiere")
-    public String showUpdateForm(Model model) {
-        model.addAttribute("bieres", biereRepository.findAll());
-        return "listBiere";
-    }
     
 
     

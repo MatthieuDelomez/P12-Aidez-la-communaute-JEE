@@ -41,13 +41,6 @@
                                                                    <groupId>org.thymeleaf.extras</groupId>
                                                                    <artifactId>thymeleaf-extras-springsecurity5</artifactId>
                                              </dependency>
-                                             
-                                             
-                                             <dependency>
-                                                                  <groupId>io.github.jpenren</groupId>
-                                                                  <artifactId>thymeleaf-spring-data-dialect</artifactId>
-                                                                  <version>3.3.0</version>
-                                             </dependency>
             
             
             
