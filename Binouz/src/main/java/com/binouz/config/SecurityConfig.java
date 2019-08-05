@@ -46,6 +46,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                             auth.jdbcAuthentication().dataSource(dataSource)
                                     .usersByUsernameQuery("SELECT username, password, enabled FROM app_user WHERE username=? ")
                                     .authoritiesByUsernameQuery("SELECT username, role FROM user_roles WHERE username=?").passwordEncoder(passwordencoder());
+                            
            
                              
 	}
@@ -74,7 +75,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         
         
         http.authorizeRequests()
-                    .antMatchers("/registration", "/css/**", "/js/**", "/vendor/**")
+                    .antMatchers("/registration", "/403", "/css/**", "/js/**", "/vendor/**")
                     .permitAll();
         
 
@@ -95,7 +96,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .permitAll()
                     
                     .defaultSuccessUrl("/index")
-                    .failureUrl("/403");
+                    .failureUrl("/login");
             
     }
 
@@ -103,6 +104,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     public AuthenticationManager customAuthenticationManager() throws Exception {
         return authenticationManager();
     }
+    
+    
+    
 
 
 }

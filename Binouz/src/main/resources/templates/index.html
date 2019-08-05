@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
 <head>
 
@@ -11,6 +12,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="colorlib.com">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    
 
   <title>Bière Lab !</title>
 
@@ -61,7 +63,10 @@
         <a class="js-scroll-trigger" href="/listCom">Consultez nos Com's</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="/addBiere">Ajoutez une Biere</a>
+        <a class="js-scroll-trigger" sec:authorize="hasRole('ROLE_USER')" href="/ajouterBiere">Ajoutez une Biere</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" sec:authorize="hasRole('ROLE_USER')" href="/addCommentaire">Ajoutez un Commentaire</a>
       </li>
       <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" sec:authorize="hasRole('ROLE_ADMIN')" href="/deleteCom">Supprimez un Commentaire</a>
@@ -73,7 +78,7 @@
           <a class="js-scroll-trigger" sec:authorize="hasRole('ROLE_ADMIN')" href="/deleteBiere">Supprimez une Biere</a>
       </li>
     
-     
+
       
       <br>
       <br>
