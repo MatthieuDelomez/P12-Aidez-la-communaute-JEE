@@ -1,124 +1,73 @@
-
 package com.binouz.config;
 
-import javax.sql.DataSource;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
 
-
+/**
+ * Classe relative à la configuration de Spring Security
+ *
+ *
+ * @author Matthieu Delomez
+ */
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(securedEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
-    
-                      @Autowired
-                       private UserDetailsService userDetailsService;
-                      
-    
-                      @Autowired
-                      public void configAuthentication(AuthenticationManagerBuilder auth) throws Exception {
-                          auth.userDetailsService(userDetailsService).passwordEncoder(passwordencoder());;
-                      }
-    
-                      @Autowired
-                      DataSource dataSource;
-    
 
+   
 
-	@Autowired
-	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-                        
-                            auth.userDetailsService(userDetailsService)
-                                    
-                                    .passwordEncoder(bCryptPasswordEncoder());
-            
-                            auth.jdbcAuthentication().dataSource(dataSource)
-                                    .usersByUsernameQuery("SELECT username, password, enabled FROM app_user WHERE username=? ")
-                                    .authoritiesByUsernameQuery("SELECT username, role FROM user_roles WHERE username=?").passwordEncoder(passwordencoder());
-                            
-           
-                             
-	}
-        
-        
-        @Bean(name="passwordEncoder")
-    public PasswordEncoder passwordencoder(){
-        return new BCryptPasswordEncoder();
-    }
-    
-    
-    //******************************************************************************************************************************************************
-    
-
-
+    /**
+     * Bean du mot de passe crypté necessaire
+     * au bon fonctionnement de Spring Security
+     * 
+     * @return BCryptPasswordEncoder
+     */
     @Bean
     public BCryptPasswordEncoder bCryptPasswordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
-    
-    
+    /*
+    * Méthode de configuration de Spring Security nottament
+    * l'autorisation des pages login et registration, Boostrap,
+    * fichier css et javascript.
+    *
+    * Paramètrage de la page login comme formLogin
+    */
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
-        
-        
         http.authorizeRequests()
-                    .antMatchers("/registration", "/403", "/css/**", "/js/**", "/vendor/**")
-                    .permitAll();
-        
+                .antMatchers("/registration", "/css/**", "/js/**", "/vendor/**")
+                .permitAll();
 
-                
-            
-            
-            http
-                    .authorizeRequests()
-                    
-                    .anyRequest()
-                    .authenticated()
-                    
-                    
-                    .and()
-                    .formLogin()
-                    .loginPage("/login")
+        http
+                .authorizeRequests()
+                .anyRequest()
+                .authenticated()
+                .and()
+                .formLogin()
+                .loginPage("/login")
+                .permitAll()
+                .defaultSuccessUrl("/index")
+                .failureUrl("/login");
 
-                    .permitAll()
-                    
-                    .defaultSuccessUrl("/index")
-                    .failureUrl("/login");
-            
     }
 
+    /**
+     *
+     * @return @throws Exception - Exception
+     */
     @Bean
     public AuthenticationManager customAuthenticationManager() throws Exception {
         return authenticationManager();
     }
-    
-    
-    
-
 
 }
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-

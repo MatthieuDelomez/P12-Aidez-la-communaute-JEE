@@ -1,0 +1,265 @@
+[INFO ] 2019-08-08 16:29:57.416 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 7008 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 16:29:57.416 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 16:29:57.416 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 16:29:58.648 [restartedMain] BinouzApplication - Started BinouzApplication in 1.556 seconds (JVM running for 607.973)
+[DEBUG] 2019-08-08 16:30:45.876 [http-nio-8090-exec-1] BiereController - Log4j 2: =======================>
+[DEBUG] 2019-08-08 16:30:45.876 [http-nio-8090-exec-1] BiereController - Log4j 2: =======================>
+[DEBUG] 2019-08-08 16:30:49.453 [http-nio-8090-exec-8] BiereController - Log4j 2: =======================>
+[DEBUG] 2019-08-08 16:30:49.453 [http-nio-8090-exec-8] BiereController - Log4j 2: =======================>
+[INFO ] 2019-08-08 16:33:16.261 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 7008 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 16:33:16.261 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 16:33:16.261 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 16:33:17.377 [restartedMain] BinouzApplication - Started BinouzApplication in 1.156 seconds (JVM running for 806.704)
+[INFO ] 2019-08-08 16:33:54.565 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 7008 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 16:33:54.565 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 16:33:54.565 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 16:33:55.689 [restartedMain] BinouzApplication - Started BinouzApplication in 1.176 seconds (JVM running for 845.016)
+[DEBUG] 2019-08-08 16:34:04.181 [http-nio-8090-exec-2] BiereController - Hello from Log4j 2 - num : Lupulus
+[DEBUG] 2019-08-08 16:34:04.181 [http-nio-8090-exec-2] BiereController - Log4j 2: =======================>
+[DEBUG] 2019-08-08 16:34:07.366 [http-nio-8090-exec-8] BiereController - Hello from Log4j 2 - num : Duvel
+[DEBUG] 2019-08-08 16:34:07.366 [http-nio-8090-exec-8] BiereController - Log4j 2: =======================>
+[INFO ] 2019-08-08 16:35:16.752 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 7008 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 16:35:16.752 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 16:35:16.752 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 16:35:17.928 [restartedMain] BinouzApplication - Started BinouzApplication in 1.216 seconds (JVM running for 927.252)
+[DEBUG] 2019-08-08 16:35:24.930 [http-nio-8090-exec-1] BiereController - Hello from Log4j 2 - num : Duvel
+[DEBUG] 2019-08-08 16:35:24.930 [http-nio-8090-exec-1] BiereController - Hello from Log4j 2 - num : 2
+[DEBUG] 2019-08-08 16:35:28.426 [http-nio-8090-exec-8] BiereController - Hello from Log4j 2 - num : Lupulus
+[DEBUG] 2019-08-08 16:35:28.426 [http-nio-8090-exec-8] BiereController - Hello from Log4j 2 - num : 2
+[INFO ] 2019-08-08 16:35:56.961 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 7008 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 16:35:56.961 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 16:35:56.961 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 16:35:58.189 [restartedMain] BinouzApplication - Started BinouzApplication in 1.276 seconds (JVM running for 967.515)
+[INFO ] 2019-08-08 16:36:29.572 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 7008 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 16:36:29.572 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 16:36:29.572 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 16:36:30.684 [restartedMain] BinouzApplication - Started BinouzApplication in 1.156 seconds (JVM running for 1000.008)
+[INFO ] 2019-08-08 16:38:53.785 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 7008 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 16:38:53.785 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 16:38:53.785 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 16:38:54.949 [restartedMain] BinouzApplication - Started BinouzApplication in 1.216 seconds (JVM running for 1144.275)
+[INFO ] 2019-08-08 16:40:07.843 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 7008 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 16:40:07.843 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 16:40:07.843 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 16:40:09.059 [restartedMain] BinouzApplication - Started BinouzApplication in 1.264 seconds (JVM running for 1218.385)
+[DEBUG] 2019-08-08 16:40:09.143 [http-nio-8090-exec-1] BiereController - Hello from Log4j 2 - nom des bieres : Lupulus
+[DEBUG] 2019-08-08 16:40:09.143 [http-nio-8090-exec-1] BiereController - Hello from Log4j 2 - liste des bieres : 2
+[DEBUG] 2019-08-08 16:40:11.601 [http-nio-8090-exec-6] BiereController - Hello from Log4j 2 - nom des bieres : Duvel
+[DEBUG] 2019-08-08 16:40:11.601 [http-nio-8090-exec-6] BiereController - Hello from Log4j 2 - liste des bieres : 2
+[INFO ] 2019-08-08 16:40:37.020 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 7008 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 16:40:37.020 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 16:40:37.020 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 16:40:38.132 [restartedMain] BinouzApplication - Started BinouzApplication in 1.156 seconds (JVM running for 1247.458)
+[INFO ] 2019-08-08 16:41:19.564 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 7008 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 16:41:19.564 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 16:41:19.568 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 16:41:20.664 [restartedMain] BinouzApplication - Started BinouzApplication in 1.14 seconds (JVM running for 1289.988)
+[INFO ] 2019-08-08 16:43:22.774 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 7008 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 16:43:22.774 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 16:43:22.774 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 16:43:24.006 [restartedMain] BinouzApplication - Started BinouzApplication in 1.272 seconds (JVM running for 1413.332)
+[INFO ] 2019-08-08 16:45:33.481 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 7008 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 16:45:33.481 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 16:45:33.481 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 16:45:34.697 [restartedMain] BinouzApplication - Started BinouzApplication in 1.252 seconds (JVM running for 1544.023)
+[DEBUG] 2019-08-08 16:47:33.480 [http-nio-8090-exec-2] CommentaireController - Hello from Log4j 2 - id du commentaire supprimé : 10
+[DEBUG] 2019-08-08 16:48:07.632 [http-nio-8090-exec-9] BiereController - Hello from Log4j 2 - idbiere : 23
+[INFO ] 2019-08-08 16:48:32.294 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 7008 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 16:48:32.294 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 16:48:32.294 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 16:48:33.422 [restartedMain] BinouzApplication - Started BinouzApplication in 1.164 seconds (JVM running for 1722.75)
+[INFO ] 2019-08-08 16:48:43.184 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 7008 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 16:48:43.184 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 16:48:43.184 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 16:48:44.292 [restartedMain] BinouzApplication - Started BinouzApplication in 1.156 seconds (JVM running for 1733.617)
+[DEBUG] 2019-08-08 16:49:05.932 [http-nio-8090-exec-2] BarController - Hello from Log4j 2 - nom du bar supprimé : Brasserie des Halles
+[INFO ] 2019-08-08 16:51:34.938 [main] BinouzApplicationTests - Starting BinouzApplicationTests on DESKTOP-GLJJ6VG with PID 8796 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 16:51:34.950 [main] BinouzApplicationTests - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 16:51:34.950 [main] BinouzApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 16:51:40.658 [main] BinouzApplicationTests - Started BinouzApplicationTests in 5.976 seconds (JVM running for 7.465)
+[INFO ] 2019-08-08 16:51:54.811 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 17068 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 16:51:54.815 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 16:51:54.815 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 16:52:00.615 [restartedMain] BinouzApplication - Started BinouzApplication in 6.148 seconds (JVM running for 7.285)
+[INFO ] 2019-08-08 17:09:47.309 [main] BinouzApplicationTests - Starting BinouzApplicationTests on DESKTOP-GLJJ6VG with PID 14804 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:09:47.321 [main] BinouzApplicationTests - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:09:47.325 [main] BinouzApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:09:53.165 [main] BinouzApplicationTests - Started BinouzApplicationTests in 6.124 seconds (JVM running for 7.736)
+[INFO ] 2019-08-08 17:10:05.823 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 12676 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:10:05.827 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:10:05.831 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:10:11.451 [restartedMain] BinouzApplication - Started BinouzApplication in 5.968 seconds (JVM running for 7.066)
+[INFO ] 2019-08-08 17:11:40.570 [main] BinouzApplicationTests - Starting BinouzApplicationTests on DESKTOP-GLJJ6VG with PID 18360 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:11:40.578 [main] BinouzApplicationTests - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:11:40.582 [main] BinouzApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:11:46.274 [main] BinouzApplicationTests - Started BinouzApplicationTests in 5.98 seconds (JVM running for 7.475)
+[INFO ] 2019-08-08 17:11:59.161 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 5568 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:11:59.165 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:11:59.165 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:12:04.609 [restartedMain] BinouzApplication - Started BinouzApplication in 6.38 seconds (JVM running for 7.493)
+[DEBUG] 2019-08-08 17:12:45.206 [http-nio-8090-exec-8] BiereController - Hello from Log4j 2 - nom des bieres : null
+[DEBUG] 2019-08-08 17:12:45.206 [http-nio-8090-exec-8] BiereController - Hello from Log4j 2 - liste des bieres : 0
+[DEBUG] 2019-08-08 17:12:49.786 [http-nio-8090-exec-10] BiereController - Hello from Log4j 2 - nom des bieres : La fée Torchette
+[DEBUG] 2019-08-08 17:12:49.790 [http-nio-8090-exec-10] BiereController - Hello from Log4j 2 - liste des bieres : 1
+[INFO ] 2019-08-08 17:13:38.367 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 5568 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:13:38.367 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:13:38.371 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:13:40.311 [restartedMain] BinouzApplication - Started BinouzApplication in 2.004 seconds (JVM running for 103.198)
+[INFO ] 2019-08-08 17:13:54.806 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 5568 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:13:54.806 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:13:54.810 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:13:56.238 [restartedMain] BinouzApplication - Started BinouzApplication in 1.48 seconds (JVM running for 119.122)
+[INFO ] 2019-08-08 17:17:04.032 [main] BinouzApplicationTests - Starting BinouzApplicationTests on DESKTOP-GLJJ6VG with PID 15676 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:17:04.044 [main] BinouzApplicationTests - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:17:04.044 [main] BinouzApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:17:09.736 [main] BinouzApplicationTests - Started BinouzApplicationTests in 5.968 seconds (JVM running for 7.382)
+[INFO ] 2019-08-08 17:17:29.094 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 12884 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:17:29.102 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:17:29.102 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:17:34.966 [restartedMain] BinouzApplication - Started BinouzApplication in 6.224 seconds (JVM running for 7.764)
+[DEBUG] 2019-08-08 17:17:44.784 [http-nio-8090-exec-10] BiereController - Hello from Log4j 2 - nom des bieres : null
+[DEBUG] 2019-08-08 17:17:44.788 [http-nio-8090-exec-10] BiereController - Hello from Log4j 2 - liste des bieres : 0
+[INFO ] 2019-08-08 17:19:19.846 [main] BinouzApplicationTests - Starting BinouzApplicationTests on DESKTOP-GLJJ6VG with PID 17656 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:19:19.862 [main] BinouzApplicationTests - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:19:19.862 [main] BinouzApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:19:25.426 [main] BinouzApplicationTests - Started BinouzApplicationTests in 5.844 seconds (JVM running for 7.317)
+[INFO ] 2019-08-08 17:19:39.313 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 11032 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:19:39.317 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:19:39.321 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:19:45.069 [restartedMain] BinouzApplication - Started BinouzApplication in 6.1 seconds (JVM running for 7.228)
+[INFO ] 2019-08-08 17:21:45.427 [main] BinouzApplicationTests - Starting BinouzApplicationTests on DESKTOP-GLJJ6VG with PID 7120 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:21:45.435 [main] BinouzApplicationTests - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:21:45.435 [main] BinouzApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:21:51.039 [main] BinouzApplicationTests - Started BinouzApplicationTests in 5.896 seconds (JVM running for 7.324)
+[INFO ] 2019-08-08 17:22:08.878 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 15720 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:22:08.886 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:22:08.886 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:22:14.562 [restartedMain] BinouzApplication - Started BinouzApplication in 6.04 seconds (JVM running for 7.245)
+[INFO ] 2019-08-08 17:25:08.355 [main] BinouzApplicationTests - Starting BinouzApplicationTests on DESKTOP-GLJJ6VG with PID 12220 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:25:08.367 [main] BinouzApplicationTests - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:25:08.371 [main] BinouzApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:25:13.987 [main] BinouzApplicationTests - Started BinouzApplicationTests in 5.924 seconds (JVM running for 7.327)
+[INFO ] 2019-08-08 17:25:28.653 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 11544 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:25:28.657 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:25:28.661 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:25:34.113 [restartedMain] BinouzApplication - Started BinouzApplication in 6.244 seconds (JVM running for 7.363)
+[INFO ] 2019-08-08 17:26:56.658 [main] BinouzApplicationTests - Starting BinouzApplicationTests on DESKTOP-GLJJ6VG with PID 2276 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:26:56.666 [main] BinouzApplicationTests - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:26:56.666 [main] BinouzApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:27:04.284 [main] BinouzApplicationTests - Started BinouzApplicationTests in 7.926 seconds (JVM running for 9.402)
+[INFO ] 2019-08-08 17:27:23.507 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 16248 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:27:23.511 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:27:23.515 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:27:29.323 [restartedMain] BinouzApplication - Started BinouzApplication in 6.164 seconds (JVM running for 7.309)
+[DEBUG] 2019-08-08 17:27:52.304 [http-nio-8090-exec-4] BiereController - Hello from Log4j 2 - nom des bieres : null
+[DEBUG] 2019-08-08 17:27:52.304 [http-nio-8090-exec-4] BiereController - Hello from Log4j 2 - liste des bieres : 0
+[INFO ] 2019-08-08 17:28:53.041 [main] BinouzApplicationTests - Starting BinouzApplicationTests on DESKTOP-GLJJ6VG with PID 5744 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:28:53.057 [main] BinouzApplicationTests - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:28:53.057 [main] BinouzApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:28:59.293 [main] BinouzApplicationTests - Started BinouzApplicationTests in 6.548 seconds (JVM running for 8.088)
+[INFO ] 2019-08-08 17:29:52.201 [main] BinouzApplicationTests - Starting BinouzApplicationTests on DESKTOP-GLJJ6VG with PID 18120 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:29:52.213 [main] BinouzApplicationTests - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:29:52.213 [main] BinouzApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:29:57.941 [main] BinouzApplicationTests - Started BinouzApplicationTests in 6.016 seconds (JVM running for 7.527)
+[INFO ] 2019-08-08 17:30:15.387 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 11352 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:30:15.391 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:30:15.395 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:30:30.283 [restartedMain] BinouzApplication - Started BinouzApplication in 15.232 seconds (JVM running for 16.42)
+[INFO ] 2019-08-08 17:33:11.378 [main] BinouzApplicationTests - Starting BinouzApplicationTests on DESKTOP-GLJJ6VG with PID 5852 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:33:11.394 [main] BinouzApplicationTests - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:33:11.394 [main] BinouzApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:33:16.958 [main] BinouzApplicationTests - Started BinouzApplicationTests in 5.836 seconds (JVM running for 7.276)
+[INFO ] 2019-08-08 17:33:29.774 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 11652 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:33:29.782 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:33:29.782 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:33:35.310 [restartedMain] BinouzApplication - Started BinouzApplication in 5.868 seconds (JVM running for 6.958)
+[DEBUG] 2019-08-08 17:34:09.486 [http-nio-8090-exec-4] BiereController - Hello from Log4j 2 - nom des bieres : null
+[DEBUG] 2019-08-08 17:34:09.486 [http-nio-8090-exec-4] BiereController - Hello from Log4j 2 - liste des bieres : 0
+[INFO ] 2019-08-08 17:35:39.358 [main] BinouzApplicationTests - Starting BinouzApplicationTests on DESKTOP-GLJJ6VG with PID 10320 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:35:39.374 [main] BinouzApplicationTests - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:35:39.374 [main] BinouzApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:35:44.914 [main] BinouzApplicationTests - Started BinouzApplicationTests in 5.832 seconds (JVM running for 7.289)
+[INFO ] 2019-08-08 17:36:31.473 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 1372 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:36:31.481 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:36:31.481 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:36:37.053 [restartedMain] BinouzApplication - Started BinouzApplication in 5.896 seconds (JVM running for 6.978)
+[INFO ] 2019-08-08 17:38:43.992 [main] BinouzApplicationTests - Starting BinouzApplicationTests on DESKTOP-GLJJ6VG with PID 4356 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:38:44.002 [main] BinouzApplicationTests - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:38:44.003 [main] BinouzApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:38:49.630 [main] BinouzApplicationTests - Started BinouzApplicationTests in 5.897 seconds (JVM running for 7.332)
+[INFO ] 2019-08-08 17:39:07.401 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 14260 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:39:07.407 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:39:07.408 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:39:13.014 [restartedMain] BinouzApplication - Started BinouzApplication in 5.977 seconds (JVM running for 7.106)
+[INFO ] 2019-08-08 17:40:54.998 [main] BinouzApplicationTests - Starting BinouzApplicationTests on DESKTOP-GLJJ6VG with PID 5480 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:40:55.010 [main] BinouzApplicationTests - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:40:55.011 [main] BinouzApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:41:00.729 [main] BinouzApplicationTests - Started BinouzApplicationTests in 5.994 seconds (JVM running for 7.439)
+[INFO ] 2019-08-08 17:41:14.284 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 10556 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:41:14.293 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:41:14.294 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:41:19.734 [restartedMain] BinouzApplication - Started BinouzApplication in 5.923 seconds (JVM running for 7.049)
+[DEBUG] 2019-08-08 17:41:37.919 [http-nio-8090-exec-10] BiereController - Hello from Log4j 2 - nom des bieres : null
+[DEBUG] 2019-08-08 17:41:37.920 [http-nio-8090-exec-10] BiereController - Hello from Log4j 2 - liste des bieres : 0
+[INFO ] 2019-08-08 17:42:53.817 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 2264 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:42:53.824 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:42:53.825 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:42:59.369 [restartedMain] BinouzApplication - Started BinouzApplication in 5.872 seconds (JVM running for 6.975)
+[INFO ] 2019-08-08 17:43:22.935 [main] BinouzApplicationTests - Starting BinouzApplicationTests on DESKTOP-GLJJ6VG with PID 13832 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:43:22.949 [main] BinouzApplicationTests - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:43:22.950 [main] BinouzApplicationTests - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:43:28.535 [main] BinouzApplicationTests - Started BinouzApplicationTests in 5.851 seconds (JVM running for 7.296)
+[INFO ] 2019-08-08 17:43:43.106 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 1948 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:43:43.112 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:43:43.113 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:43:48.624 [restartedMain] BinouzApplication - Started BinouzApplication in 5.858 seconds (JVM running for 7.023)
+[DEBUG] 2019-08-08 17:44:05.465 [http-nio-8090-exec-7] BiereController - Hello from Log4j 2 - nom des bieres : null
+[DEBUG] 2019-08-08 17:44:05.465 [http-nio-8090-exec-7] BiereController - Hello from Log4j 2 - liste des bieres : 0
+[INFO ] 2019-08-08 17:46:08.763 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 1948 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:46:08.763 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:46:08.764 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:46:11.723 [restartedMain] BinouzApplication - Started BinouzApplication in 3.044 seconds (JVM running for 150.121)
+[INFO ] 2019-08-08 17:46:18.561 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 1948 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:46:18.562 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:46:18.562 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:46:20.065 [restartedMain] BinouzApplication - Started BinouzApplication in 1.554 seconds (JVM running for 158.464)
+[INFO ] 2019-08-08 17:49:17.560 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 1948 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:49:17.560 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:49:17.561 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:49:19.755 [restartedMain] BinouzApplication - Started BinouzApplication in 2.265 seconds (JVM running for 338.154)
+[INFO ] 2019-08-08 17:49:26.003 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 1948 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:49:26.003 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:49:26.003 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:49:27.376 [restartedMain] BinouzApplication - Started BinouzApplication in 1.427 seconds (JVM running for 345.774)
+[INFO ] 2019-08-08 17:49:49.715 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 1948 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:49:49.715 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:49:49.716 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:49:50.983 [restartedMain] BinouzApplication - Started BinouzApplication in 1.315 seconds (JVM running for 369.381)
+[INFO ] 2019-08-08 17:49:53.556 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 1948 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:49:53.556 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:49:53.557 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:49:55.302 [restartedMain] BinouzApplication - Started BinouzApplication in 1.82 seconds (JVM running for 373.701)
+[INFO ] 2019-08-08 17:50:02.124 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 1948 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:50:02.125 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:50:02.125 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:50:03.290 [restartedMain] BinouzApplication - Started BinouzApplication in 1.205 seconds (JVM running for 381.688)
+[INFO ] 2019-08-08 17:52:58.145 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 1948 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:52:58.145 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:52:58.145 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:52:59.834 [restartedMain] BinouzApplication - Started BinouzApplication in 1.765 seconds (JVM running for 558.233)
+[INFO ] 2019-08-08 17:53:07.363 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 1948 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:53:07.363 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:53:07.363 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:53:08.654 [restartedMain] BinouzApplication - Started BinouzApplication in 1.33 seconds (JVM running for 567.052)
+[INFO ] 2019-08-08 17:53:39.761 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 1948 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-08 17:53:39.761 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-08 17:53:39.762 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-08 17:53:40.868 [restartedMain] BinouzApplication - Started BinouzApplication in 1.147 seconds (JVM running for 599.267)
+[INFO ] 2019-08-09 10:25:39.734 [restartedMain] BinouzApplication - Starting BinouzApplication on DESKTOP-GLJJ6VG with PID 5584 (started by Ben Gourion in C:\Users\Ben Gourion\Downloads\P12-Aidez-la-communaute-JEE\Binouz)
+[DEBUG] 2019-08-09 10:25:39.740 [restartedMain] BinouzApplication - Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+[INFO ] 2019-08-09 10:25:39.741 [restartedMain] BinouzApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2019-08-09 10:25:45.342 [restartedMain] BinouzApplication - Started BinouzApplication in 5.929 seconds (JVM running for 7.048)
+[DEBUG] 2019-08-09 10:26:07.080 [http-nio-8090-exec-4] BiereController - Hello from Log4j 2 - nom des bieres : null
+[DEBUG] 2019-08-09 10:26:07.080 [http-nio-8090-exec-4] BiereController - Hello from Log4j 2 - liste des bieres : 0
+[DEBUG] 2019-08-09 10:26:11.862 [http-nio-8090-exec-4] BiereController - Hello from Log4j 2 - nom des bieres : Delirium
+[DEBUG] 2019-08-09 10:26:11.862 [http-nio-8090-exec-4] BiereController - Hello from Log4j 2 - liste des bieres : 3

@@ -1,0 +1,8 @@
+com.app.binouz
+com.app.binouz.controller
+com.app.binouz.dao
+com.app.binouz.model
+com.app.binouz.security
+com.app.binouz.service
+com.app.binouz.validator
+com.binouz.config

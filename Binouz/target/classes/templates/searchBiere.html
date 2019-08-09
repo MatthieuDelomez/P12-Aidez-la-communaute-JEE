@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Cherchez votre Biere</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    
+    <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+
+    </head>
+    <body id="page-top">
+
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" >Cherchez votre Binou'z ;)</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="/index">Home</a>
+      </li>
+      <br>
+      <br>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="/listBiere">Consultez nos Bieres</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="/listBar">Consultez nos Bars</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="/addBar">Ajoutez un Bar</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="/addBiere">Ajoutez une Biere</a>
+      </li>
+      <br>
+      <br>
+      <li class="sidebar-nav-item">
+      <div class="js-scroll-trigger">
+      <form th:action="@{/logout}" method="post">
+      <input  type="submit" value="Sign Out"  class="btn btn-primary"/>
+     </div>
+     </form>
+     </li>
+      </ul>
+  </nav>
+  
+  
+  
+  
+        
+          <div class="container my-5">
+        <h3> Cherchez votre Beer favorite</h3>
+        <div class="card">
+            <div class="card-body">
+                <div class="col-md-10">
+                    <form action="#" th:action="@{/searchBiere}" method="get">
+                        <div class="row">
+        
+        
+ <h2>Find Beer... Hmmm That Need Beer!</h2>
+ <br>
+ <br>
+ <div class="form-group col-md-8">
+    <label for="nombiere">Search:</label> <input name="nombiere">
+    </input>
+    
+    
+ </div>
+    </div>
+        </div>
+             </div>
+                 </div>
+                      </div>
+        
+        
+    <br>
+    <br>
+    <br>
+    
+     <div class="container my-5">
+        <h3> Ici le résultat de votre recherche</h3>
+        <div class="card">
+            <div class="card-body">
+                <div class="col-md-10">
+    <table>
+    <thead>
+   <tbody>
+    <tr th:if="${nombieres.empty}">
+            <td colspan="5"> No Beer Available </td>
+        </tr>
+        <ul th:each="nombiere : ${nombieres}">
+            <li><span th:text="${nombiere.nombiere}"> Nom de la Bière </span></li>
+            <li><span th:text="${nombiere.nombar}"> Nom du Bar </span></li>
+            <li><span th:text="${nombiere.variete}"> Variete </span></li>
+            <li><span th:text="${nombiere.region}"> Region </span></li>
+            <li><span th:text="${nombiere.degres}"> Degres </span></li>
+        </ul>
+    
+    
+    
+    </tbody>
+    </thead>
+   </table>
+                    
+                    
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    </body>
+    
+      <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+</body>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js" data-cf-settings="dc05896777a71f9e616b648a-|49" defer=""></script>
+</html>

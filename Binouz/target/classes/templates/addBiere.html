@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Add Biere</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    
+    <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" >Cherchez votre Binou'z ;)</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="/index">Home</a>
+      </li>
+      <br>
+      <br>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="/listBar">Consultez nos Bars</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="/listCom">Consultez nos Com's</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="/addBar">Ajoutez un Bar</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="/addCommentaire">Ajoutez un Commentaire</a>
+      </li>
+      <br>
+      <br>
+      <li class="sidebar-nav-item">
+      <div class="js-scroll-trigger">
+      <form th:action="@{/logout}" method="post">
+      <input  type="submit" value="Sign Out"  class="btn btn-primary"/>
+     </div>
+     </form>
+     </li>
+      </ul>
+  </nav>
+
+
+
+
+    <div class="container my-5">
+        <h3> Add biere</h3>
+        <div class="card">
+            <div class="card-body">
+                <div class="col-md-10">
+                    <form action="#" th:action="@{/addBiere}" th:object="${biere}" method="post">
+                        <div class="row">
+                            
+                            
+                            <div class="form-group col-md-8">
+                                <label for="nombiere" class="col-form-label">Nom de la Bière</label> <input type="text" th:field="*{nombiere}" class="form-control" id="nombiere" placeholder="NomBiere"> <span th:if="${#fields.hasErrors('nombiere')}" th:errors="*{nombiere}" class="text-danger"></span>
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label for="nombar" class="col-form-label">Nom du Bar</label> <input type="text" th:field="*{nombar}" class="form-control" id="nombar" placeholder="NomBar"> <span th:if="${#fields.hasErrors('nombar')}" th:errors="*{nombar}" class="text-danger"></span>
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label for="variete" class="col-form-label">Variete</label> <input type="text" th:field="*{variete}" class="form-control" id="variete" placeholder="Variete"> <span th:if="${#fields.hasErrors('variete')}" th:errors="*{variete}" class="text-danger"></span>
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label for="region" class="col-form-label">Region</label> <input type="text" th:field="*{region}" class="form-control" id="region" placeholder="Region"> <span th:if="${#fields.hasErrors('region')}" th:errors="*{region}" class="text-danger"></span>
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label for="degres" class="col-form-label">Degres</label> <input type="text" th:field="*{degres}" class="form-control" id="degres" placeholder="degres"> <span th:if="${#fields.hasErrors('degres')}" th:errors="*{degres}" class="text-danger"></span>
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <input type="submit" class="btn btn-primary" value="Ajoutez votre bière">
+                            </div>
+
+                            <div class="form-group col-md-8"></div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+  
+  
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+</body>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js" data-cf-settings="dc05896777a71f9e616b648a-|49" defer=""></script>
+</html>

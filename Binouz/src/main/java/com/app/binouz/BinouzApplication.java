@@ -10,7 +10,11 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
-
+/**
+ * Classe de configuration de l'application
+ * 
+ * @author Matthieu Delomez
+ */
 @Configuration
 @SpringBootApplication(exclude = { SecurityAutoConfiguration.class })
 @Import(SecurityConfig.class)
@@ -21,7 +25,11 @@ public class BinouzApplication extends SpringBootServletInitializer {
         return application.sources(BinouzApplication.class);
     }
 
-	public static void main(String[] args) {
+    /**
+     * 
+     * @param args - Méthode main de l'application
+     */
+    public static void main(String[] args) {
 		SpringApplication.run(BinouzApplication.class, args);
 	}
         

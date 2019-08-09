@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Enregistrez-vous</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    
+    <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+</head>
+
+
+ <div class="container my-5">
+        <h3> Enregistrez-vous</h3>
+        <div class="card">
+            <div class="card-body">
+                <div class="col-md-10">
+                    <form action="#" th:action="@{/registration}" th:object="${appuser}" method="post">
+                        <div class="row">
+                            
+                            
+                            <div class="form-group col-md-8">
+                                <label for="adresseMail" class="col-form-label">Adresse mail</label> <input type="text" th:field="*{adresseMail}" class="form-control" id="adresseMail" placeholder="Adresse Mail"> <span th:if="${#fields.hasErrors('adresseMail')}" th:errors="*{adresseMail}" class="text-danger"></span>
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label for="password" class="col-form-label">Mot de Passe</label> <input type="password" th:field="*{password}" class="form-control" id="password" placeholder="Mot de Passe"> <span th:if="${#fields.hasErrors('password')}" th:errors="*{password}" class="text-danger"></span>
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label for="username" class="col-form-label">Pseudo</label> <input type="text" th:field="*{username}" class="form-control" id="username" placeholder="Pseudo"> <span th:if="${#fields.hasErrors('username')}" th:errors="*{username}" class="text-danger"></span>
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label for="nom" class="col-form-label">Nom</label> <input type="text" th:field="*{nom}" class="form-control" id="nom" placeholder="Nom"> <span th:if="${#fields.hasErrors('nom')}" th:errors="*{nom}" class="text-danger"></span>
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label for="prenom" class="col-form-label">Prenom</label> <input type="text" th:field="*{prenom}" class="form-control" id="prenom" placeholder="Prenom"> <span th:if="${#fields.hasErrors('prenom')}" th:errors="*{prenom}" class="text-danger"></span>
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <input type="submit" value="Submit"  class="btn btn-primary"/>
+                            </div>
+
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+</body>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js" data-cf-settings="dc05896777a71f9e616b648a-|49" defer=""></script>
+</html>
+

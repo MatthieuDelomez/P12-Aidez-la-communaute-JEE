@@ -17,13 +17,22 @@ import org.springframework.transaction.annotation.Transactional;
 
 
 
-
+/**
+ * Implementation de la methode login et authentification avec Spring Security
+ * Implementation de l'interface:
+ * org.springframework.security.core.userdetails.UserDetailsService 
+ * 
+ * @author Delomez Matthieu
+ */
 @Service("UserDetailsService")
 public class UserDetailsServiceImpl  implements UserDetailsService {
     
-    
+    /*
+    Injection du repository relatif à l'utilisateur
+    */
     @Autowired
     private UserRepository userRepository;
+    
     
     @Override
     @Transactional(readOnly = true)
@@ -38,9 +47,7 @@ public class UserDetailsServiceImpl  implements UserDetailsService {
             
             grantedAuthorities.add(new SimpleGrantedAuthority(role.getRole()));
         }
-        
-        
-        
+                
                 return new org.springframework.security.core.userdetails.User(user.getUsername(), user.getPassword(), grantedAuthorities);
                 
                
